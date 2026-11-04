@@ -41,3 +41,17 @@ Use `--split development` or `--split validation` for 14 examples, and `--limit 
 The runner regenerates predictions with the current notebook implementation; it does not regenerate those independent reviews or promise identical scores. The local judge can make semantic mistakes even after passing controls. Model/runtime versions, graph extraction, and generation may affect reruns. Cached/concurrent historical timings are not comparable to a fresh run's latency.
 
 The notebook's saved two-question execution is a runnable demonstration. It is separate from the frozen 28-question evidence and does not replace it. Disposable caches, exploratory variants, duplicate snapshots, and raw debugging logs are not required by this runner.
+
+## Supplemental Baselines and Runtime
+
+`baseline_extension_20261105/` adds No Memory, Chat History and Summarization on the same 28 questions. `predictions.csv` retains answers, automatic grades, two independent reviews with method labels masked, rationales and timing. `review_summary.json` reports No Memory 2-3/28 (one ambiguous location answer), Chat History 4/28 and Summarization 6/28. The frozen RAG scores remain unchanged. These are model-assisted reviews, not official GPT-4o evaluation or human ground truth.
+
+`runtime.csv` measures four methods sequentially on the same two regression questions; `metadata.json` records configuration, hashes, hardware, timing boundaries and an interrupted judge call. Setup, controls and grading are excluded from per-case timings. Memory is rebuilt or replayed per case. The saved Graph times come from a separate earlier run, so they do not support a controlled speed ratio.
+
+```powershell
+.\.venv\Scripts\python.exe experiments\compare_baselines.py --methods no_memory chat_history --output tmp\new_fast.jsonl
+.\.venv\Scripts\python.exe experiments\compare_baselines.py --methods summarization --output tmp\new_summary.jsonl
+.\.venv\Scripts\python.exe experiments\compare_baselines.py --methods no_memory chat_history summarization history_rag --split regression --output tmp\new_runtime.jsonl
+```
+
+The runner imports the unchanged notebook definitions and logs grading parse failures as ungraded. Automatic labels are not reliable enough to replace independent review. Summarization retains the notebook's unspecified temperature/seed defaults; new generations may differ. Structured Memory is excluded because it extracts records per message. Raw JSONL and review packets remain local and ignored; the compact CSVs preserve the final evidence.

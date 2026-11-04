@@ -1,0 +1,81 @@
+{
+  "scope": "New baselines only; original RAG scores remain frozen. Two independent model reviews with method names and automatic labels masked. Ambiguity retained as lower/upper interval.",
+  "scores": {
+    "no_memory": {
+      "development": {
+        "n": 14,
+        "correct_lower": 1,
+        "correct_upper": 1
+      },
+      "validation": {
+        "n": 14,
+        "correct_lower": 1,
+        "correct_upper": 2
+      },
+      "overall": {
+        "n": 28,
+        "correct_lower": 2,
+        "correct_upper": 3
+      },
+      "correct_types": {
+        "temporal-reasoning": 1,
+        "single-session-preference": 1
+      },
+      "auto_correct": 5,
+      "auto_false_positives": 3
+    },
+    "chat_history": {
+      "development": {
+        "n": 14,
+        "correct_lower": 2,
+        "correct_upper": 2
+      },
+      "validation": {
+        "n": 14,
+        "correct_lower": 2,
+        "correct_upper": 2
+      },
+      "overall": {
+        "n": 28,
+        "correct_lower": 4,
+        "correct_upper": 4
+      },
+      "correct_types": {
+        "abstention": 4
+      },
+      "auto_correct": 9,
+      "auto_false_positives": 6
+    },
+    "summarization": {
+      "development": {
+        "n": 14,
+        "correct_lower": 3,
+        "correct_upper": 3
+      },
+      "validation": {
+        "n": 14,
+        "correct_lower": 3,
+        "correct_upper": 3
+      },
+      "overall": {
+        "n": 28,
+        "correct_lower": 6,
+        "correct_upper": 6
+      },
+      "correct_types": {
+        "abstention": 4,
+        "single-session-preference": 2
+      },
+      "auto_correct": 7,
+      "auto_false_positives": 3
+    }
+  },
+  "review_disagreements": 0,
+  "ambiguous_rows": [
+    {
+      "method": "no_memory",
+      "question_id": "07741c45",
+      "reason": "Identifies the correct closet but omits the shoe rack; acceptance depends on required location specificity."
+    }
+  ]
+}

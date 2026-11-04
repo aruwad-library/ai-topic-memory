@@ -1,0 +1,268 @@
+{
+  "date_local": "2026-11-05",
+  "timezone": "Asia/Seoul",
+  "scope": "Exploratory extension on the frozen 28-example selection. Notebook logic and saved outputs remain unchanged. No Memory, Chat History and Summarization each run on all 28 cases. Structured Memory is excluded. Existing History RAG and Graph RAG primary scores are not replaced.",
+  "environment": {
+    "python": "3.14.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "gpu": "NVIDIA GeForce RTX5090, 32607MiB",
+    "packages": {
+      "langchain": "1.4.8",
+      "langchain-ollama": "1.1.0",
+      "langgraph": "1.2.19",
+      "langmem": "0.0.30",
+      "llama-index-core": "0.14.25",
+      "sentence-transformers": "6.2.0",
+      "transformers": "5.22.1",
+      "torch": "2.15.0"
+    },
+    "models": [
+      {
+        "name": "qwen3:8b",
+        "digest": "500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41",
+        "size": 5225388164
+      },
+      {
+        "name": "qwen3:1.7b",
+        "digest": "8f68893c685c3ddff2aa3fffce2aa60a30bb2da65ca488b61fff134a4d1730e7",
+        "size": 1359293444
+      },
+      {
+        "name": "qwen3:4b-instruct",
+        "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+        "size": 2497293803
+      }
+    ]
+  },
+  "run_headers": {
+    "fast_baselines.jsonl": {
+      "record_type": "run",
+      "started_utc": "2026-11-04T16:55:00.784516+00:00",
+      "notebook_sha256": "9f6ef6c0c4b52095b29e334f8a2a445e69020cf3aee1429302bbbd1567bc87b0",
+      "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+      "dataset_indices": [
+        14,
+        3,
+        127,
+        68,
+        192,
+        200,
+        134,
+        150,
+        236,
+        244,
+        430,
+        369,
+        489,
+        485,
+        35,
+        31,
+        365,
+        67,
+        220,
+        175,
+        145,
+        133,
+        260,
+        262,
+        443,
+        391,
+        488,
+        478
+      ],
+      "methods": [
+        "no_memory",
+        "chat_history"
+      ],
+      "setup_seconds": 29.14495370000077,
+      "judge_controls": "6/6",
+      "timing_note": "One sample per call; wall time includes cold memory construction. LLM call durations include server load/prefill/generation. Grading is timed separately. No warm-up or graph rebuild."
+    },
+    "summarization.jsonl": {
+      "record_type": "run",
+      "started_utc": "2026-11-04T16:59:24.929561+00:00",
+      "notebook_sha256": "9f6ef6c0c4b52095b29e334f8a2a445e69020cf3aee1429302bbbd1567bc87b0",
+      "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+      "dataset_indices": [
+        14,
+        3,
+        127,
+        68,
+        192,
+        200,
+        134,
+        150,
+        236,
+        244,
+        430,
+        369,
+        489,
+        485,
+        35,
+        31,
+        365,
+        67,
+        220,
+        175,
+        145,
+        133,
+        260,
+        262,
+        443,
+        391,
+        488,
+        478
+      ],
+      "methods": [
+        "summarization"
+      ],
+      "setup_seconds": 25.667367599999125,
+      "judge_controls": "6/6",
+      "timing_note": "One sample per call; wall time includes cold memory construction. LLM call durations include server load/prefill/generation. Grading is timed separately. No warm-up or graph rebuild."
+    },
+    "regression_timing.jsonl": {
+      "record_type": "run",
+      "started_utc": "2026-11-04T17:14:47.241254+00:00",
+      "notebook_sha256": "9f6ef6c0c4b52095b29e334f8a2a445e69020cf3aee1429302bbbd1567bc87b0",
+      "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+      "dataset_indices": [
+        137,
+        27
+      ],
+      "methods": [
+        "no_memory",
+        "chat_history",
+        "summarization",
+        "history_rag"
+      ],
+      "setup_seconds": 29.37993429999915,
+      "judge_controls": "6/6",
+      "timing_note": "One sample per call; wall time includes cold memory construction and any in-call model load. Setup and judge controls precede timing, warming the answer model. Grading is timed separately. No graph rebuild."
+    }
+  },
+  "measurement_notes": {
+    "event": "The first fast-baseline process stopped after16 saved NoMemory predictions when grade_answer returned empty content for index365 (gpt4_fe651585_abs), raising pydantic.ValidationError. Completed predictions were retained. The wrapper was changed to record grading validation errors without discarding predictions, and the run resumed with unchanged notebook/model/prompt. The interrupted index365 answer was regenerated; its first unsaved prediction is unavailable. NoMemory final28 and ChatHistory28 are complete. Automatic grades still require independent review.",
+    "notebook_unchanged": true,
+    "timing_clarification": "The original run header says No warm-up, meaning no dedicated warm-up run; however six judge controls necessarily warm the8b model before timed predictions. Setup and controls are excluded from per-case time, while any subsequent in-call model loads remain included and are recorded in load_duration. Memory is rebuilt/replayed per case. The first1.7b summary call may include a model load."
+  },
+  "method_notes": {
+    "chat_history": "Keeps the last messages in supplied dataset order, not date-sorted order. Original 1000-token heuristic.",
+    "summarization": "Original 6000-token trigger, 512-token keep, 150-word instruction and 384-generation-token limit. Summary model temperature and seed are not explicitly set. Answer seed 42 is preserved.",
+    "instrumentation": "Callbacks measure original model invocations. One item per method call avoids cumulative notebook timers. The History RAG index wrapper records time and returns unchanged data."
+  },
+  "accuracy_statistics": "Independent blinded reviews are stored in predictions.csv; automatic grades alone are not reported as final scores.",
+  "timing_28": {
+    "chat_history": {
+      "n": 28,
+      "mean_seconds": 1.0690356285714577,
+      "median_seconds": 1.0462264500019955,
+      "min_seconds": 0.6196636000022409,
+      "max_seconds": 1.5249789000008604,
+      "mean_answer_seconds": 1.0657061964292163,
+      "mean_compression_seconds": 0,
+      "mean_input_tokens": 825.1785714285714,
+      "summary_call_count": 0,
+      "summary_length_terminations": 0,
+      "automatic_ungraded": 0
+    },
+    "no_memory": {
+      "n": 28,
+      "mean_seconds": 0.9363196107141059,
+      "median_seconds": 0.8750971500012383,
+      "min_seconds": 0.43814369999745395,
+      "max_seconds": 1.4428277000042726,
+      "mean_answer_seconds": 0.9361065892862825,
+      "mean_compression_seconds": 0,
+      "mean_input_tokens": 82.82142857142857,
+      "summary_call_count": 0,
+      "summary_length_terminations": 0,
+      "automatic_ungraded": 0
+    },
+    "summarization": {
+      "n": 28,
+      "mean_seconds": 28.326194914286003,
+      "median_seconds": 28.681263700000272,
+      "min_seconds": 21.00445039999613,
+      "max_seconds": 33.855526200000895,
+      "mean_answer_seconds": 1.7623757464290455,
+      "mean_compression_seconds": 26.528241471425385,
+      "mean_input_tokens": 3413.25,
+      "summary_call_count": 661,
+      "summary_length_terminations": 334,
+      "automatic_ungraded": 1
+    }
+  },
+  "review_packet": "blind_fast contains 56 new cases. blind_extension mixes 28 new summary cases with 28 frozen RAG anchors (14 History and 14 Graph, seven each per split). IDs derive from SHA256; shuffle seed is 20261105. Anchor reviews do not replace frozen RAG scores.",
+  "matched_regression_timing": {
+    "chat_history": {
+      "n": 2,
+      "dataset_indices": [
+        137,
+        27
+      ],
+      "mean_seconds": 1.7257517000034568,
+      "individual_seconds": [
+        2.4606449000057182,
+        0.9908585000011954
+      ],
+      "mean_index_seconds": null,
+      "mean_answer_seconds": 1.7209541499978513,
+      "mean_compression_seconds": 0,
+      "mean_query_including_retrieval_seconds": null
+    },
+    "history_rag": {
+      "n": 2,
+      "dataset_indices": [
+        137,
+        27
+      ],
+      "mean_seconds": 24.60942900000009,
+      "individual_seconds": [
+        25.576511500003107,
+        23.642346499997075
+      ],
+      "mean_index_seconds": 22.284688550000283,
+      "mean_answer_seconds": 2.1252791000006255,
+      "mean_compression_seconds": 0,
+      "mean_query_including_retrieval_seconds": 2.3247404499998083
+    },
+    "no_memory": {
+      "n": 2,
+      "dataset_indices": [
+        137,
+        27
+      ],
+      "mean_seconds": 1.0830041500048537,
+      "individual_seconds": [
+        1.3319782000035048,
+        0.8340301000062027
+      ],
+      "mean_index_seconds": null,
+      "mean_answer_seconds": 1.082688499998767,
+      "mean_compression_seconds": 0,
+      "mean_query_including_retrieval_seconds": null
+    },
+    "summarization": {
+      "n": 2,
+      "dataset_indices": [
+        137,
+        27
+      ],
+      "mean_seconds": 27.310293950002233,
+      "individual_seconds": [
+        26.21573690000514,
+        28.404850999999326
+      ],
+      "mean_index_seconds": null,
+      "mean_answer_seconds": 2.0854720000024827,
+      "mean_compression_seconds": 25.187468800002534,
+      "mean_query_including_retrieval_seconds": null
+    }
+  },
+  "matched_timing_limit": "Two cases only. Each case constructs or replays its memory from scratch. Model setup, controls and grading are excluded; in-call load time is included. The two saved Graph RAG times in evaluation_results.csv come from a separate prior fresh-kernel run, so the five-way timing comparison is illustrative, not a controlled repeated benchmark. No Graph RAG index/query breakdown is available for that prior run.",
+  "reproduction_commands": [
+    ".\\.venv\\Scripts\\python.exe experiments\\compare_baselines.py --methods no_memory chat_history --output tmp\\new_fast.jsonl",
+    ".\\.venv\\Scripts\\python.exe experiments\\compare_baselines.py --methods summarization --output tmp\\new_summary.jsonl",
+    ".\\.venv\\Scripts\\python.exe experiments\\compare_baselines.py --methods no_memory chat_history summarization history_rag --split regression --output tmp\\new_runtime.jsonl"
+  ]
+}

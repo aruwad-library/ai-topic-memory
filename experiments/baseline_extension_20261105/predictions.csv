@@ -1,0 +1,565 @@
+﻿split,dataset_index,question_id,type,method,question,reference,candidate,automatic_correct,grading_error,seconds,answer_seconds,compression_seconds,summary_calls,summary_length_terminations,input_tokens,summary,review_id,review_a,review_b,review_a_reason,review_b_reason,correct_lower,correct_upper
+development,14,726462e0,single-session-user,no_memory,What was the discount I got on my first purchase from the new clothing brand?,10%,You received a 20% discount on your first purchase from the new clothing brand.,False,,0.748994000001403,0.7486113999984809,0,0,0,82,,eea87ff53082,False,False,States twenty percent instead of ten percent.,States twenty percent rather than ten percent.,0,0
+development,3,58bf7951,single-session-user,no_memory,What play did I attend at the local community theater?,The Glass Menagerie,"You attended ""The Startup Comedy,"" a local community theater production about friends starting a business, last weekend.",False,,0.9513606000036816,0.9511734999978216,0,0,0,77,,6375766b8951,False,False,Names a different play instead of The Glass Menagerie.,Gives a different play title instead of The Glass Menagerie.,0,0
+development,127,80ec1f4f_abs,abstention,no_memory,How many different museums or galleries did I visit in December?,0. You did not mention visitng any museum in December,You visited two different museums or galleries in December: the Art Institute of Chicago and a gallery in Chicago.,False,,1.342386099997384,1.3422038999997312,0,0,0,78,,b6dae009d9ee,False,False,Invents two visits despite the abstention requirement.,Invents definite museum visits rather than recognizing unavailable information.,0,0
+development,68,29f2956b_abs,abstention,no_memory,How much time do I dedicate to practicing violin every day?,"You did not mention this information. You mentioned practing guitar everyday, but not violin.",You dedicate 30 minutes every day to practicing the violin.,False,,0.5603113000033773,0.5601251999978558,0,0,0,78,,695b0b28a457,False,False,Invents a definite violin practice duration.,Invents a thirty-minute violin-practice duration.,0,0
+development,192,8979f9ec,multi-session,no_memory,What is the total number of lunch meals I got from the chicken fajitas and lentil soup?,8 meals,You had 2 lunch meals: chicken fajitas on Monday and lentil soup on Wednesday.,False,,0.7984053999971366,0.7982196000011754,0,0,0,87,,71e85f692295,False,False,Gives two meals rather than the required total of eight.,States two meals rather than the required total of eight.,0,0
+development,200,0ea62687,multi-session,no_memory,How much more miles per gallon was my car getting a few months ago compared to now?,2,Your car was getting 5 miles per gallon more a few months ago compared to now.,False,,0.8858832999976585,0.8856775999956881,0,0,0,84,,bfcca06a7c9a,False,False,States five mpg instead of two mpg.,States five mpg rather than two mpg.,0,0
+development,134,75832dbd,single-session-preference,no_memory,Can you recommend some recent publications or conferences that I might find interesting?,"The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",I don't know. The conversation does not provide enough information about your field of interest or specific preferences to recommend publications or conferences.,False,,1.4428277000042726,1.4426333000010345,0,0,0,80,,6605495cd168,False,False,Offers no healthcare-AI recommendation.,Offers no recommendation based on the healthcare-AI interests.,0,0
+development,150,505af2f5,single-session-preference,no_memory,I was thinking of trying a new coffee creamer recipe. Any recommendations?,"The user would prefer responses that suggest variations on their existing almond milk, vanilla extract, and honey creamer recipe or new ideas that align with their goals of reducing sugar intake and saving money. They might not prefer responses that recommend commercial creamer products or recipes that are high in sugar or expensive.","You might try a simple vanilla bean coffee creamer by blending vanilla extract, cinnamon, and a touch of sugar with milk or cream for a rich, aromatic twist.",False,,1.193469300000288,1.1932493999993312,0,0,0,81,,888d439e785c,False,False,"Generic dairy-and-sugar recipe does not establish the almond-milk recipe, reduced-sugar goal or budget preference.",Generic creamer recipe does not clearly use the existing almond-milk recipe or the low-sugar/budget goals.,0,0
+development,236,b46e15ed,temporal-reasoning,no_memory,"How many months have passed since I participated in two charity events in a row, on consecutive days?",2,"You do not know. The conversation does not provide the specific dates of the charity events, so the number of months that have passed cannot be determined.",True,,1.349255200002517,1.3490651000029175,0,0,0,86,,8ad0093b96c2,False,False,Does not give the two-month duration or a tolerated adjacent count.,Does not provide the answerable elapsed time of two months.,0,0
+development,244,gpt4_e072b769,temporal-reasoning,no_memory,How many weeks ago did I start using the cashback app 'Ibotta'?,3 weeks ago,"You mentioned, ""I've been using Ibotta for about 3 weeks now,"" so the answer is **3 weeks ago**.",True,,0.8417409999965457,0.8415371000010055,0,0,0,83,,a63fac47b950,True,True,Explicitly gives the required three weeks.,Gives the required duration of three weeks.,1,1
+development,430,ba61f0b9,knowledge-update,no_memory,How many women are on the team led by my former manager Rachel?,6,The conversation does not provide information about the number of women on Rachel's team.,False,,0.6793010000037611,0.6791031000029761,0,0,0,80,,d03bb799d8ae,False,False,Does not provide the six-woman count.,Does not provide the required count of six women.,0,0
+development,369,852ce960,knowledge-update,no_memory,What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?,"$400,000",You do not know. The conversation does not provide the specific pre-approval amount from Wells Fargo. Check your loan documents or contact Wells Fargo directly for that information.,True,,0.7210850000046776,0.7208985000033863,0,0,0,84,,3a936d0b62a6,False,False,Does not provide the required four-hundred-thousand-dollar amount.,"Does not supply the required mortgage amount of $400,000.",0,0
+development,489,b759caee,single-session-assistant,no_memory,I was looking back at our previous conversation about buying unique engagement rings directly from designers. Can you remind me of the Instagram handle of the UK-based designer who works with unusual gemstones?,@jessica_poole_jewellery,I don't know.,False,,1.259130999998888,1.2589387000043644,0,0,0,103,,fe1ec69f0336,False,False,Does not identify the required Instagram handle.,Does not supply the required Instagram handle.,0,0
+development,485,41275add,single-session-assistant,no_memory,I wanted to follow up on our previous conversation about YouTube videos for workplace posture. Can you remind me of the Mayo Clinic video you recommended?,The video is 'How to Sit Properly at a Desk to Avoid Back Pain' and the link is https://www.youtube.com/watch?v=UfOvNlX9Hh0.,"I don’t have the exact title of the Mayo Clinic video, but I can help you search for it using keywords like ""Mayo Clinic workplace posture"" on YouTube. Let me know if you’d like further assistance!",False,,1.1776926999955322,1.1775015000021085,0,0,0,94,,9302c87e503c,False,False,Offers search keywords but neither the requested video title nor link.,Search advice does not identify the required video.,0,0
+validation,35,60d45044,single-session-user,no_memory,What type of rice is my favorite?,Japanese short-grain rice,I don't know.,False,,0.43814369999745395,0.43794830000115326,0,0,0,74,,c4bb556b10bf,False,False,Does not identify Japanese short-grain rice.,Does not identify Japanese short-grain rice.,0,0
+validation,31,d52b4f67,single-session-user,no_memory,Where did I attend my cousin's wedding?,The Grand Ballroom,You attended your cousin's wedding at the beach house in Malibu.,False,,0.8074458999981289,0.8072621000028448,0,0,0,75,,9ce8ba0e9bdd,False,False,Names a Malibu beach house instead of the Grand Ballroom.,Gives a different venue instead of The Grand Ballroom.,0,0
+validation,365,gpt4_fe651585_abs,abstention,no_memory,"Who became a parent first, Tom or Alex?","The information provided is not enough. You mentioned Alex becoming a parent in January, but you didn't mention anything about Tom.","Alex became a parent first, in 2020, while Tom had a child in 2021.",False,,0.8643110000048182,0.8638639999990119,0,0,0,76,,4f2956d678c0,False,False,Invents definite dates for an unanswerable comparison.,Invents a definite ordering and dates for an unanswerable comparison.,0,0
+validation,67,19b5f2b3_abs,abstention,no_memory,How long was I in Korea for?,"You did not mention this information. You mentioned staying in Japan, but not in Korea.",You were in Korea for 10 days.,False,,0.9386605999970925,0.9384616000024835,0,0,0,74,,4935457f2b72,False,False,Invents a definite Korea duration for an unanswerable question.,Invents a definite Korea-stay duration.,0,0
+validation,220,a346bb18,multi-session,no_memory,How many minutes did I exceed my target time by in the marathon?,12,You exceeded your target time by 15 minutes.,False,,1.2012076999963028,1.2010171999936574,0,0,0,80,,de8d2cfbd26f,False,False,States fifteen minutes instead of twelve; this is not a temporal-duration-category tolerance.,States fifteen minutes rather than twelve; not an allowed off-by-one match.,0,0
+validation,175,6456829e,multi-session,no_memory,How many plants did I initially plant for tomatoes and cucumbers?,8,You initially planted 15 tomato plants and 10 cucumber plants.,False,,0.9241653000062797,0.9239710000038031,0,0,0,80,,7979c765d785,False,False,Counts twenty-five plants rather than eight.,Gives counts totaling twenty-five rather than eight plants.,0,0
+validation,145,09d032c9,single-session-preference,no_memory,I've been having trouble with the battery life on my phone lately. Any tips?,"The user would prefer responses that build upon their previous mention of purchasing a portable power bank, such as suggestions on how to optimize its use, like ensuring it's fully charged before use. They might also appreciate tips on utilizing battery-saving features on their phone. The user may not prefer responses that suggest alternative solutions or unrelated advice.","Check your phone's battery usage settings to identify apps draining power, lower screen brightness, and disable Bluetooth/Wi-Fi when not needed.",False,,1.3697468999962439,1.3694975000034901,0,0,0,83,,8e7ff4f68f72,True,True,"Battery settings, brightness and radio controls satisfy the rubric battery-saving-feature advice; every power-bank point is not required.","Recommends battery-saving settings explicitly permitted by the preference rubric; every point, including the power bank, need not be covered.",1,1
+validation,133,06878be2,single-session-preference,no_memory,Can you suggest some accessories that would complement my current photography setup?,The user would prefer suggestions of Sony-compatible accessories or high-quality photography gear that can enhance their photography experience. They may not prefer suggestions of other brands' equipment or low-quality gear.,"I recommend adding a tripod for stability, a remote shutter release to minimize camera shake, and a polarizing filter to enhance contrast and reduce reflections. These accessories can significantly improve your photography in various lighting conditions.",True,,1.1191070999993826,1.1189043000049423,0,0,0,79,,21e00b2df3e5,False,False,Generic accessories do not establish Sony compatibility or the user-specific high-quality-gear preference.,Lists generic accessories without establishing Sony compatibility or using the personal setup information.,0,0
+validation,260,gpt4_45189cb4,temporal-reasoning,no_memory,What is the order of the sports events I watched in January?,"First, I attended a NBA game at the Staples Center, then I watched the College Football National Championship game, and finally, I watched the NFL playoffs.",I don't know. The conversation does not provide information about the sports events you watched in January or their order.,False,,0.5296858000001521,0.5294968999951379,0,0,0,79,,ee60126b11c8,False,False,Does not supply the required three-event order.,Provides none of the required ordered sports events.,0,0
+validation,262,gpt4_e061b84f,temporal-reasoning,no_memory,"What is the order of the three sports events I participated in during the past month, from earliest to latest?","I first completed the Spring Sprint Triathlon, then took part in the Midsummer 5K Run, and finally participated in the company's annual charity soccer tournament.",You did not provide specific dates or the order of the sports events in our conversation. I do not know the sequence. Please provide more details.,False,,0.8052697999955853,0.8050793000002159,0,0,0,88,,34d44ebb3c66,False,False,"Does not supply the triathlon, 5K, soccer sequence.",Declines to give the required ordered event sequence.,0,0
+validation,443,07741c45,knowledge-update,no_memory,Where do I currently keep my old sneakers?,in a shoe rack in my closet,You currently keep your old sneakers in your closet.,True,,0.6393755000026431,0.6391661000016029,0,0,0,75,,20f21ea033e9,,,Identifies the correct closet but omits the shoe rack; acceptance depends on required location specificity.,Gives the correct closet but omits the shoe rack; the required location specificity is ambiguous.,0,1
+validation,391,618f13b2,knowledge-update,no_memory,How many times have I worn my new black Converse Chuck Taylor All Star sneakers?,six,You do not know. The conversation does not mention how many times you've worn your new black Converse Chuck Taylor All Star sneakers.,False,,0.718849600001704,0.7186298000015086,0,0,0,83,,20dddee45b6a,False,False,Does not provide the six-wear count.,Does not supply the updated count of six wears.,0,0
+validation,488,561fabcd,single-session-assistant,no_memory,"I was thinking back to our previous conversation about the Radiation Amplified zombie, and I was wondering if you remembered what we finally decided to name it?",Fissionator.,"We decided to name it the ""Glowing Ghoul.""",False,,1.0941670999964117,1.0939730999962194,0,0,0,96,,0a736e20ffb8,False,False,Names Glowing Ghoul rather than Fissionator.,Gives a different zombie name instead of Fissionator.,0,0
+validation,478,e982271f,single-session-assistant,no_memory,I was going through our previous chat. Can you remind me of the name of the last venue you recommended in the list of popular venues in Portland for indie music shows?,Revolution Hall,"I don't have access to our previous chat history, so I can't recall the specific venue I recommended last. For current indie music venues in Portland, you might check spots like SongByrd or the Wonder Ballroom. Let me know if you'd like updated recommendations!",False,,0.814969499995641,0.8147754000019631,0,0,0,100,,82c57d51bd3b,False,False,Does not identify Revolution Hall; alternatives do not answer the recall question.,Does not recall Revolution Hall; other venue suggestions are not equivalent.,0,0
+development,14,726462e0,single-session-user,chat_history,What was the discount I got on my first purchase from the new clothing brand?,10%,I do not have access to information about your personal purchases or discounts from specific brands.,False,,0.8572596000012709,0.8508078000013484,0,0,0,845,,50af4d0542fd,False,False,Refuses rather than supplying the ten-percent discount.,Does not provide the answerable ten-percent discount.,0,0
+development,3,58bf7951,single-session-user,chat_history,What play did I attend at the local community theater?,The Glass Menagerie,I don't know. The conversation does not mention attending a play or any theater events.,False,,0.809835899999598,0.806281700002728,0,0,0,967,,2209d8f385e1,False,False,Does not identify The Glass Menagerie.,Does not provide the required play title.,0,0
+development,127,80ec1f4f_abs,abstention,chat_history,How many different museums or galleries did I visit in December?,0. You did not mention visitng any museum in December,I don't know. The conversation does not mention anything about museums or galleries visited in December.,False,,0.8981549999953131,0.8950150999953621,0,0,0,987,,c1002ab485c1,True,True,Recognizes that December museum or gallery visits were not provided.,"Correctly identifies that December museum visits were not mentioned, without guessing.",1,1
+development,68,29f2956b_abs,abstention,chat_history,How much time do I dedicate to practicing violin every day?,"You did not mention this information. You mentioned practing guitar everyday, but not violin.",You do not know. The conversation does not mention anything about violin practice or time dedicated to it.,True,,0.9883188999956474,0.9850807999973767,0,0,0,902,,c1e15e3c52db,True,True,Recognizes that violin practice duration is absent.,Correctly identifies that violin-practice duration is unavailable.,1,1
+development,192,8979f9ec,multi-session,chat_history,What is the total number of lunch meals I got from the chicken fajitas and lentil soup?,8 meals,"I do not know. The conversation provided no information about meals, chicken fajitas, lentil soup, or any counts related to lunch meals.",False,,0.8883537000001525,0.8852553000033367,0,0,0,885,,591fc7da158c,False,False,Does not provide the total of eight meals.,Does not supply the required total of eight meals.,0,0
+development,200,0ea62687,multi-session,chat_history,How much more miles per gallon was my car getting a few months ago compared to now?,2,The conversation does not provide information about your car's fuel efficiency or compare miles per gallon from different times. I cannot answer this question based on the given context.,True,,1.1655520999993314,1.1622350999969058,0,0,0,1020,,7d6b6e30e431,False,False,Refuses an answerable fuel-efficiency comparison; does not give two mpg.,Declines an answerable comparison; does not give the two-mpg difference.,0,0
+development,134,75832dbd,single-session-preference,chat_history,Can you recommend some recent publications or conferences that I might find interesting?,"The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.",I do not know.,False,,1.1788234999985434,1.1755469999989145,0,0,0,1040,,1ba416a93835,False,False,Offers no recommendation aligned with healthcare AI or medical imaging.,Offers no recommendation related to the stated healthcare-AI interests.,0,0
+development,150,505af2f5,single-session-preference,chat_history,I was thinking of trying a new coffee creamer recipe. Any recommendations?,"The user would prefer responses that suggest variations on their existing almond milk, vanilla extract, and honey creamer recipe or new ideas that align with their goals of reducing sugar intake and saving money. They might not prefer responses that recommend commercial creamer products or recipes that are high in sugar or expensive.",I don't know. The conversation does not provide information about coffee creamer recipes.,False,,1.285469299997203,1.2823738000006415,0,0,0,615,,d7e8fda23a23,False,False,Offers no recommendation using the stated creamer preferences.,Offers no recommendation using the stated creamer preferences.,0,0
+development,236,b46e15ed,temporal-reasoning,chat_history,"How many months have passed since I participated in two charity events in a row, on consecutive days?",2,"I do not know. The conversation does not provide specific dates for the charity events, so I cannot calculate the number of months that have passed.",False,,1.2998902999970596,1.296836000001349,0,0,0,681,,90decb151503,False,False,Does not give the two-month duration or a tolerated adjacent count.,Declines the answerable elapsed-time question.,0,0
+development,244,gpt4_e072b769,temporal-reasoning,chat_history,How many weeks ago did I start using the cashback app 'Ibotta'?,3 weeks ago,"You have not provided any information about when you started using the Ibotta app, so I cannot determine how many weeks ago that occurred.",True,,1.5249789000008604,1.5215185999986716,0,0,0,1024,,d26a0897460e,False,False,Does not provide the answerable three-week duration.,Does not provide the answerable three-week duration.,0,0
+development,430,ba61f0b9,knowledge-update,chat_history,How many women are on the team led by my former manager Rachel?,6,"I do not know. The conversation provided does not mention Rachel or her team, so there is no information available about the number of women on her team.",False,,1.078635400001076,1.0754854000042542,0,0,0,789,,2a0f6d5a3744,False,False,Does not provide the six-woman count.,Does not supply the required count of six women.,0,0
+development,369,852ce960,knowledge-update,chat_history,What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?,"$400,000","I do not have access to personal financial information, including mortgage pre-approval details. You should contact Wells Fargo directly or check your loan documents for this information.",True,,0.9995009999984177,0.9962439000009908,0,0,0,937,,cb4b034c9603,False,False,Refuses instead of providing the required mortgage amount.,"Does not supply the required mortgage amount of $400,000.",0,0
+development,489,b759caee,single-session-assistant,chat_history,I was looking back at our previous conversation about buying unique engagement rings directly from designers. Can you remind me of the Instagram handle of the UK-based designer who works with unusual gemstones?,@jessica_poole_jewellery,The UK-based designer mentioned in our previous conversation who works with unusual gemstones has the Instagram handle @margarettroper.,False,,1.0613898000010522,1.0581814000033773,0,0,0,963,,030a0935cd42,False,False,Provides a different Instagram handle.,Gives a different Instagram handle.,0,0
+development,485,41275add,single-session-assistant,chat_history,I wanted to follow up on our previous conversation about YouTube videos for workplace posture. Can you remind me of the Mayo Clinic video you recommended?,The video is 'How to Sit Properly at a Desk to Avoid Back Pain' and the link is https://www.youtube.com/watch?v=UfOvNlX9Hh0.,"I don't know about a specific Mayo Clinic video on workplace posture, as our previous conversation focused on sustainability in fashion, not workplace health resources.",False,,1.0987183000033838,1.095545399999537,0,0,0,846,,7ba0c32eee2a,False,False,Does not identify the requested Mayo Clinic video.,Does not recall the required video title or link.,0,0
+validation,35,60d45044,single-session-user,chat_history,What type of rice is my favorite?,Japanese short-grain rice,I don't know. The conversation does not provide information about your favorite type of rice.,True,,1.0312905000027968,1.0281775000039488,0,0,0,686,,2110a7336236,False,False,Does not identify Japanese short-grain rice.,Does not identify Japanese short-grain rice.,0,0
+validation,31,d52b4f67,single-session-user,chat_history,Where did I attend my cousin's wedding?,The Grand Ballroom,You do not know. The conversation does not mention where you attended your cousin's wedding.,False,,1.040821100003086,1.037769800001115,0,0,0,759,,ecf538c08234,False,False,Does not identify the Grand Ballroom.,Does not provide The Grand Ballroom as the wedding venue.,0,0
+validation,365,gpt4_fe651585_abs,abstention,chat_history,"Who became a parent first, Tom or Alex?","The information provided is not enough. You mentioned Alex becoming a parent in January, but you didn't mention anything about Tom.",I do not know.,True,,1.051631800000905,1.0485372000039206,0,0,0,830,,9d4124f13ccb,True,True,Correctly abstains because the relative parenthood dates are unavailable.,Expresses lack of knowledge without guessing which person became a parent first.,1,1
+validation,67,19b5f2b3_abs,abstention,chat_history,How long was I in Korea for?,"You did not mention this information. You mentioned staying in Japan, but not in Korea.",I don't know. The conversation does not provide any information about your stay in Korea.,True,,0.8170047000021441,0.8138446000011754,0,0,0,715,,55f6f6912d48,True,True,Correctly recognizes that a Korea stay duration was not provided.,Correctly identifies that the Korea-stay duration is unavailable.,1,1
+validation,220,a346bb18,multi-session,chat_history,How many minutes did I exceed my target time by in the marathon?,12,You do not know. The conversation does not mention a marathon or specific race times.,False,,0.7195561999978963,0.716493799998716,0,0,0,583,,6d63958f34b9,False,False,Does not give the twelve-minute overrun.,Declines the answerable duration question; does not give twelve minutes.,0,0
+validation,175,6456829e,multi-session,chat_history,How many plants did I initially plant for tomatoes and cucumbers?,8,"The conversation does not mention anything about planting tomatoes, cucumbers, or the number of plants initially planted. I do not have that information.",False,,1.4097256000022753,1.4064918000003672,0,0,0,1036,,27646139d4b7,False,False,Does not provide the total of eight plants.,Does not provide the required total of eight plants.,0,0
+validation,145,09d032c9,single-session-preference,chat_history,I've been having trouble with the battery life on my phone lately. Any tips?,"The user would prefer responses that build upon their previous mention of purchasing a portable power bank, such as suggestions on how to optimize its use, like ensuring it's fully charged before use. They might also appreciate tips on utilizing battery-saving features on their phone. The user may not prefer responses that suggest alternative solutions or unrelated advice.",I don't know. The conversation does not mention anything about phone battery life or related advice.,False,,0.6740060000010999,0.6709704000022612,0,0,0,472,,f442ccd59a9a,False,False,Offers no battery or power-bank advice satisfying the rubric.,Provides no battery advice using any stated preference.,0,0
+validation,133,06878be2,single-session-preference,chat_history,Can you suggest some accessories that would complement my current photography setup?,The user would prefer suggestions of Sony-compatible accessories or high-quality photography gear that can enhance their photography experience. They may not prefer suggestions of other brands' equipment or low-quality gear.,"You do not know. The previous conversation was about baby gyms, and there is no information provided about your photography setup or accessories.",True,,1.367787600000156,1.3647780000028433,0,0,0,727,,8928c20ab510,False,False,Offers no advice satisfying the photography preference rubric.,Offers no photography recommendation using the personal setup information.,0,0
+validation,260,gpt4_45189cb4,temporal-reasoning,chat_history,What is the order of the sports events I watched in January?,"First, I attended a NBA game at the Staples Center, then I watched the College Football National Championship game, and finally, I watched the NFL playoffs.",I do not know. The conversation does not mention any sports events or activities watched in January.,False,,0.8425262000018847,0.8394346999994013,0,0,0,681,,0865ba3ea3f9,False,False,Does not provide the three-event viewing order.,Does not provide the required ordered sports events.,0,0
+validation,262,gpt4_e061b84f,temporal-reasoning,chat_history,"What is the order of the three sports events I participated in during the past month, from earliest to latest?","I first completed the Spring Sprint Triathlon, then took part in the Midsummer 5K Run, and finally participated in the company's annual charity soccer tournament.",I do not know. The conversation does not mention any sports events or your participation in them.,False,,0.9874386000010418,0.9842519999947399,0,0,0,852,,d76c217eb4b4,False,False,Does not provide the ordered sports events.,Does not provide the required ordered event sequence.,0,0
+validation,443,07741c45,knowledge-update,chat_history,Where do I currently keep my old sneakers?,in a shoe rack in my closet,I don't know. The conversation does not mention where you keep your old sneakers.,False,,0.6196636000022409,0.616476800001692,0,0,0,710,,33afa598ba29,False,False,Does not identify the current storage location.,Does not provide the current shoe-storage location.,0,0
+validation,391,618f13b2,knowledge-update,chat_history,How many times have I worn my new black Converse Chuck Taylor All Star sneakers?,six,I do not know. The conversation history does not mention anything about your Converse Chuck Taylor All Star sneakers or their usage frequency.,False,,1.3135842999981833,1.3102287000001525,0,0,0,905,,059c33062e5e,False,False,Does not provide the six-wear count.,Does not provide the updated count of six wears.,0,0
+validation,488,561fabcd,single-session-assistant,chat_history,"I was thinking back to our previous conversation about the Radiation Amplified zombie, and I was wondering if you remembered what we finally decided to name it?",Fissionator.,"I don't have information about a ""Radiation Amplified zombie"" or any prior discussion about naming such a creature. Our conversation history focused on emojis, cultural adaptations, and the meaning of symbols. Let me know if you'd like to revisit that topic!",False,,1.4871166000011726,1.483826700001373,0,0,0,825,,e6569b4a3595,False,False,Does not identify Fissionator.,Declines to supply the required name Fissionator.,0,0
+validation,478,e982271f,single-session-assistant,chat_history,I was going through our previous chat. Can you remind me of the name of the last venue you recommended in the list of popular venues in Portland for indie music shows?,Revolution Hall,"I do not have access to previous conversations or external information, so I cannot provide the name of the last venue recommended in your previous chat about Portland's indie music venues. Please check your conversation history or provide additional context.",True,,1.435963099997025,1.4320842000015546,0,0,0,823,,b9af2e49fc85,False,False,Does not identify Revolution Hall.,Does not recall Revolution Hall.,0,0
+development,14,726462e0,single-session-user,summarization,What was the discount I got on my first purchase from the new clothing brand?,10%,I do not know. The conversation does not mention any discounts or specific details about a new clothing brand or promotional offers.,False,,28.820566900001722,1.532371700006479,27.249402399975224,23,9,2244,"Here is a summary of the conversation to date:
+
+- **2023/05/25**  
+  - User: Agreed with life satisfaction statements (7)  
+  - User: Planned day trip, added essentials  
+  - User: Added laptop, RFID-blocking wallet  
+  - User: Added earbuds, coffee, gym supplies  
+  - User: Troubleshooted Hulu login  
+  - User: Recommended Korean dramas  
+  - User: Viki ""Learn Mode"" feature  
+  - User: Upgraded internet plan, dog dental care advice  
+  - User: Suggested Oxyfresh Pet Toothbrush for Max  
+  - User: Asked about storage and quantity of toothpaste/toothbrush  
+  - User: Inquired about low-fat/diet dental chews  
+
+- **2023/05/26**  
+  - Human: Asked about Horizon Zero Dawn gameplay footage recording  
+  - AI: Provided pros/cons and tips  
+  - Human: Inquired about Port-Royal Grammar, Kant, Schleicher, and Frege  
+  - AI: Cited examples from their works  
+  - Human: Reported sleep issues, bedtime, wake-up time, and snooze behavior  
+  - AI: Offered troubleshooting suggestions  
+
+- **2023/05/27**  
+  - User: Entered art competition, sought eco-friendly sculpting inspiration  
+  - AI: Provided materials, techniques, and tools for sustainable sculpting  
+  - User: Shared tools, asked for eco-friendly sculpting suggestions  
+  - AI: Suggested air-dry clay, natural waxes, recycled paper pulp, and wire armatures  
+  - User: Inquired about hay quality, protein needs, and enrichment activities  
+  - AI: Provided hay recommendations, dietary needs, and enrichment suggestions  
+  - User: Asked about cooking classes in Hanoi  
+
+- **",bd389b2ddbd5,False,False,Does not give the ten-percent discount.,Does not provide the answerable ten-percent discount.,0,0
+development,3,58bf7951,single-session-user,summarization,What play did I attend at the local community theater?,The Glass Menagerie,You do not know. The conversation does not mention any play attended at the local community theater.,False,,25.721800500003155,1.885488299994904,23.793182000001252,24,5,4710,"Here is a summary of the conversation to date:
+
+The conversation includes discussions about a Smart Reservation System project, a blog post about journaling, and advice on appraising and insuring jewelry. Key points:
+
+- **Project Backlog**: A sprint backlog for a 1-week sprint with two developers was provided.
+- **Journaling Blog**: A personal story about restarting journaling was drafted, with a conclusion asking readers to reflect.
+- **Jewelry Appraisal/Insurance**: The user is seeking advice on protecting valuable jewelry.
+
+New events:  
+- **2023/05/30 (Tue) 20:40**: Discussion about ANC and terrorism, including the Church Street bombing, Mandela's role, and bin Laden's classification.  
+- **2023/05/30 (Tue) 21:03**: Book recommendations and discussion about ""Sharp Objects"" and its atmosphere.  
+
+No new facts or dates added.",19ad117f7919,False,False,Does not identify The Glass Menagerie.,Does not provide the required play title.,0,0
+development,127,80ec1f4f_abs,abstention,summarization,How many different museums or galleries did I visit in December?,0. You did not mention visitng any museum in December,You did not mention visiting any museums or galleries in December. The conversation does not provide information about museum visits during that month.,True,,30.58811560000322,1.5994627999971271,28.95265169999766,24,18,5130,"Here is a summary of the conversation to date:
+
+User requested art inspiration, clarified fictional artists, asked about tech training, gamification, assessments, and fundraising for a cycling event. AI provided game-based platforms, motivation tips, and event tips. User expressed enthusiasm, asked about Latin music, hip-hop moves, dance event prep, and book recommendations. AI suggested historical fiction, classical retellings, and thriller books. User asked about Peking cuisine ingredients. AI listed scallions, bean sprouts, soy sauce, tofu, and peanuts. User added financial budget for marketing campaign across phases. AI provided timeline and budget. User requested clothing for Colorado, including layers, comfort, and first-aid kit. AI suggested versatile items, cold-weather layers, and essential first-aid supplies. User asked about packing toiletry bag with shampoo, conditioner, toothbrush, and toothpaste. AI advised including them, suggested compact alternatives, and provided packing tips. User asked about art supply stores in city, recommended online search and Google Maps. AI suggested printmaking and abstract art stores, listed online marketplaces. User asked about galleries/museums with abstract/printmaking exhibits. AI provided general guidance, listed notable museums and online resources. User asked about Wing On market share and expansion. AI stated no real-time data, noted Wing On's history, unique features, and online presence. User asked about Wing On's pandemic measures. AI listed safety protocols, customer service, and online shopping. User asked about Delta SkyMiles flight availability. AI provided general guidance, noted flight availability, and suggested booking. User requested non-stop flight on March 12th, Delta Flight 1441, with aircraft and in-flight amenities. AI provided details. User asked about Delta Comfort+ vs. Main Cabin seat cost. AI provided redemption rates. User decided to book Delta Comfort+ seat. AI guided seat selection process. User asked about seat selection on Delta's",552d15e3c64e,True,True,Recognizes that December visits were not mentioned.,Correctly identifies the absence of information about December museum visits.,1,1
+development,68,29f2956b_abs,abstention,summarization,How much time do I dedicate to practicing violin every day?,"You did not mention this information. You mentioned practing guitar everyday, but not violin.",You do not know. The conversation does not provide information about time dedicated to practicing violin.,True,,32.87189529999887,1.5390260999993188,31.29749169995921,24,22,3762,"Here is a summary of the conversation to date:
+
+Summary:  
+Human: 2023/05/29 (Mon) 13:03 - AI: Interview questions for Junior Policy Assistant at ISED  
+Human: 2023/05/29 (Mon) 16:44 - AI: NLP/DL resources, transformer models, RNN/CNN applications in NLP, language modeling, machine translation  
+Human: 2023/05/29 (Mon) 16:44 - AI: Transformer model specifics, research papers, implementation libraries  
+Human: 2023/05/29 (Mon) 21:35 - AI: Innovations in renewable energy tech since 2010: solar, wind, hydro, geothermal, energy storage, wave, biomass  
+Human: 2023/05/29 (Mon) 21:35 - AI: Energy storage expected to have biggest impact in next few years  
+Human: 2023/05/29 (Mon) 21:35 - AI: Energy storage important for electric cars  
+Human: 2023/05/29 (Mon) 21:35 - AI: Obstacles to renewable energy progress: cost, intermittency, infrastructure, policy  
+Human: 2023/05/29 (Mon) 21:35 - AI: Individuals can promote renewable energy transition: reduce consumption, support policies, invest in renewables, install solar panels, educate others  
+Human: 2023/05/30 (Tue) 13:13 - AI: 50 risks with explanations, tasks, severity, and categories  
+Human: 2023/05",0a8edcb0656b,True,True,Correctly abstains from an unspecified violin duration.,Correctly identifies that violin-practice duration is unavailable.,1,1
+development,192,8979f9ec,multi-session,summarization,What is the total number of lunch meals I got from the chicken fajitas and lentil soup?,8 meals,"The conversation does not provide specific information about the number of lunch meals you received from chicken fajitas and lentil soup. To determine the total, you would need to clarify how many times you had each meal. Without additional details, the total cannot be calculated.",False,,25.824745999998413,1.8400018999964232,23.950072399995406,24,8,4187,"Here is a summary of the conversation to date:
+
+Updated running summary:
+
+User asked about strength training, lower belly targeting, flight deals, gardening tips, nursing challenges, and Indigenous rights. Assistant provided exercises, tips, flight details, gardening advice, and addressed Indigenous rights issues. User confirmed schedule, asked for flight info, requested upgrade, expressed interest in Premium Economy. AI corrected dates, preserved names, applied explicit corrections. User asked about companion plants, trellis stability, gardening journal tips. AI provided planting guidelines and stabilization tips. User asked about Shone's album themes and childhood influences. AI explained limitations and offered alternatives. AI added modern nursing challenges, recognition, and receipt management tips. Word count: 150.  
+Conversation date: 2023/05/30 (Tue) 01:49.  
+Human: Indigenous rights, government support, project management tools, Asana features, proposal task management. AI corrected dates, preserved names, applied explicit corrections.",4716ef3c4207,False,False,Refuses instead of giving the required eight-meal total.,Declines an answerable total; does not provide eight meals.,0,0
+development,200,0ea62687,multi-session,summarization,How much more miles per gallon was my car getting a few months ago compared to now?,2,"You do not know. The conversation does not provide specific information about your car's miles per gallon (MPG) at different times. To determine the difference, you would need to compare MPG readings from specific dates or logs.",False,,31.2186337000021,1.8984674999956042,29.286570000011125,23,19,3663,"Here is a summary of the conversation to date:
+
+2023/05/20 (Sat) Human: Tune-up tips, oil change, tire pressure, dash cam, car phone mount.  
+2023/05/20 (Sat) 03:32 Human: Agile tools, Jira, Trello, writing tools, Ulysses, ProWritingAid.  
+2023/05/20 (Sat) 08:14 Human: Jump shot improvement, three-pointers, rest, core exercises.  
+2023/05/20 (Sat) 08:14 Human: Volleyball interest, local clubs, beginner resources.  
+2023/05/21 (Sun) Human: Decorating living room.  
+2023/05/21 (Sun) 05:16 AI: Garmin GPS device battery replacement guide, Fitbit vs. Apple Watch comparison, bike ride tracking, tune-up advice.  
+2023/05/21 (Sun) 11:12 AI: Civic engagement strategies, empathy, polarized world.  
+2023/05/23 (Tue) Human: P-51D Mustang model building, airbrushing, Vallejo paints, camouflage.  
+2023/05/24 (Wed) Human: Resoling boots, laundry, distressed denim jeans, floor lamp for bedroom.  
+2023/05/24 (Wed) AI: Boot resoling, laundry, denim stain removal, lamp recommendations.  
+2023/05/24 (Wed) Human: Interest in Wix 51348 air filter, Honda Civic, installation, compatibility.  
+2023/05/26 (Fri",6f5aa582a63e,False,False,Does not give the two-mpg difference.,Declines to give the answerable two-mpg difference.,0,0
+development,134,75832dbd,single-session-preference,summarization,Can you recommend some recent publications or conferences that I might find interesting?,"The user would prefer suggestions related to recent research papers, articles, or conferences that focus on artificial intelligence in healthcare, particularly those that involve deep learning for medical image analysis. They would not be interested in general AI topics or those unrelated to healthcare.","I don't know. The conversation does not provide specific information about your field of interest, professional background, or areas of focus, making it difficult to recommend relevant publications or conferences.",False,,22.548787200001243,1.5165359000020544,20.997475499978464,24,0,1988,"Here is a summary of the conversation to date:
+
+**Running Summary**
+
+**Date:** 2023/05/28  
+**User:** Discussed family events, social media strategies, community building, property renovations, backyard landscaping, and sustainable practices.  
+**AI:** Provided family details, social media tips, community planning, eco-friendly materials, and calendar planning.  
+
+**Date:** 2023/05/28  
+**User:** Asked about social media engagement, community building, and relationships (sex worker, mission with Odyl).  
+**AI:** Provided tips for content creation, challenges, community planning, and noted emotional weight of relationships.  
+
+**Date:** 2023/05/29  
+**User:** Shared personal details (Olivia’s birthdate, adoption dates, family members), asked about social media strategies, and discussed leadership styles.  
+**AI:** Corrected family information, provided social media insights, and discussed leadership variability.  
+
+**Date:** 2023/05/29  
+**User:** Asked about a unisex heavy cotton tee, then asked about opioid addiction recovery, and sought recipe and gift suggestions.  
+**AI:** Provided tee specifications, discussed addiction interventions, and offered recipe and gift ideas.  
+
+**Date:** 2023/05/29  
+**User:** Shared bridal shower experience, used Bed Bath & Beyond sale, asked about fashion tips for winter coat.  
+**AI:** Offered recipe suggestions, addressed addiction recovery, and provided fashion styling advice.",bb7d693d3aa2,False,False,Offers no recommendation aligned with healthcare AI.,Offers no recommendation using the stated healthcare-AI interests.,0,0
+development,150,505af2f5,single-session-preference,summarization,I was thinking of trying a new coffee creamer recipe. Any recommendations?,"The user would prefer responses that suggest variations on their existing almond milk, vanilla extract, and honey creamer recipe or new ideas that align with their goals of reducing sugar intake and saving money. They might not prefer responses that recommend commercial creamer products or recipes that are high in sugar or expensive.","[Conversation date: 2023/05/30 (Tue) 20:16] Here's a simple, healthy coffee creamer recipe that aligns with your focus on nutrition and flavor:  
+
+**Chocolate Hemp Seed Coffee Creamer**  
+*Ingredients*:  
+- 1/4 cup unsweetened almond milk (or other non-dairy milk)  
+- 1 tablespoon ground hemp seeds (for protein and omega-3s)  
+- 1 teaspoon cocoa powder (for richness and antioxidants)  
+- 1/2 teaspoon chia seeds (for fiber and omega-3s)  
+- 1/2 teaspoon honey or maple syrup (optional, for sweetness)  
+- A pinch of sea salt  
+
+*Instructions*:  
+1. Whisk all ingredients together until well combined.  
+2. Store in a sealed jar in the fridge for up to 5 days.  
+
+**Why It Works**:  
+- Hemp seeds and chia seeds boost protein and omega-3s.  
+- Cocoa powder adds antioxidants and a rich flavor.  
+- No added sugars (adjust sweetness to your preference).  
+
+Enjoy this nutrient-dense, plant-based creamer with your coffee! ☕🌱",True,,32.695939299999736,2.9379170999964117,29.722821800009115,23,21,3941,"Here is a summary of the conversation to date:
+
+2023/05/20 (Sat) 02:53: Host requests speaker avoid sales pitch.  
+2023/05/20 (Sat) 03:19: AI generates 30 brand names.  
+2023/05/20 (Sat) 08:13: Host asks for Halloween decoration, drinks, desserts, games.  
+2023/05/20 (Sat) 08:13: AI provides detailed suggestions.  
+2023/05/20 (Sat) 08:43: User sends email about property concerns.  
+2023/05/20 (Sat) 09:25: AI revises bathroom cleanup story.  
+2023/05/20 (Sat) 23:17: User asks hiking trail recommendations.  
+2023/05/20 (Sat) 23:17: AI provides trail recommendations.  
+2023/05/20 (Sat) 23:17: User asks camping in Sequoia.  
+2023/05/20 (Sat) 23:17: AI provides camping tips.  
+2023/05/20 (Sat) 23:17: User asks water filter options.  
+2023/05/27 (Sat) 08:59: AI discusses VR healthcare applications.  
+2023/05/27 (Sat) 08:59: AI addresses VR safety risks and precautions.  
+2023/05/30 (Tue) 00:29: AI",bd9b8d9d8354,True,True,"Offers an almond-milk-based variation with minimal optional sweetener, satisfying relevant parts of the preference rubric.","Offers a homemade unsweetened almond-milk creamer with optional small sweetener, satisfying the low-sugar variation preference.",1,1
+development,236,b46e15ed,temporal-reasoning,summarization,"How many months have passed since I participated in two charity events in a row, on consecutive days?",2,"The conversation does not provide specific dates for the two consecutive charity events, so I cannot determine how many months have passed.",True,,24.550054700004694,1.7362625999958254,22.77922069998749,24,4,2767,"Here is a summary of the conversation to date:
+
+Updated running summary:
+
+User requested sonnet, limerick, music, festival, and travel documents. AI provided passport, visa, and travel document guidance. User asked about India's blank page, vaccinations, and doctor's appointment. AI suggested staying motivated and supporting racial justice. User sought embroidery and quilt inspiration. AI offered fabric, sashiko, and quilt patterns. User asked about balance of power in international law. AI explained its evolution and impact. Human questioned trust in international institutions. AI addressed challenges, power imbalances, selective enforcement, and lack of political will. Human expressed skepticism about international law's effectiveness. AI acknowledged progress, civil society, multi-stakeholder initiatives, and partnerships. Human discussed fashion magazine coverage and screen time management. AI suggested Todoist and RescueTime, emphasized screen time tracking, and provided tips for reducing social media usage. User set a 30-minute timer to log off. Human used timer to focus on photography, mentioned Canon EOS and prime lenses, interest in landscape and nature photography, planned to visit Yellowstone. AI discussed Industrial Revolution's impact on working-class lives, government's limited responsibility, and historical context. User asked about bike inspection checklist, recommended heavy-duty locks, already has Kryptonite U-lock. AI provided bike lock recommendations, emphasized security and portability. Human asked about shoe maintenance, requested a shoe wear log. AI offered spreadsheet template and guidance for adding data. Human requested book recommendations for kids. AI suggested educational and fun children's books.",2c20237f1da9,False,False,Does not give the two-month duration or a tolerated adjacent count.,Does not provide the answerable two-month duration.,0,0
+development,244,gpt4_e072b769,temporal-reasoning,summarization,How many weeks ago did I start using the cashback app 'Ibotta'?,3 weeks ago,"You did not mention using the cashback app ""Ibotta"" in any prior messages in this conversation. Therefore, there is no information available to determine how many weeks ago you started using it.",False,,32.47781280000345,1.3562326000028406,31.088181700011774,24,23,3770,"Here is a summary of the conversation to date:
+
+2023/03/17 (Fri) Human asks for recipe suggestions for Korean-Mexican Kimchi Quesadilla and Moroccan-Chinese Chicken Tagine with Udon Noodles. AI provides recipe details.  
+2023/03/17 (Fri) 02:36 Human asks for ingredient tips for hard-to-find items. AI offers online resources and substitutions.  
+2023/03/17 (Fri) 02:36 Human asks for a simple homemade kimchi recipe. AI provides traditional recipe with ingredients and instructions.  
+2023/03/17 (Fri) 02:36 Human asks for lime juice recommendations. AI suggests fresh lime juice, brands, and usage tips.  
+2023/03/17 (Fri) 02:36 Human asks for Mexican street corn (elote) recipe. AI provides simple recipe with ingredients and instructions.  
+2023/03/18 (Sat) 05:58 Human asks for NYC photography suggestions. AI lists iconic spots and tips for street photography.  
+2023/03/18 (Sat) 05:58 Human asks for tips for capturing street performers in Chinatown and Little Italy. AI offers respectful and ethical approaches.  
+2023/03/18 (Sat) 05:58 Human asks for tips for capturing textures and patterns in Chinatown and Little Italy. AI suggests using lighting, composition, and context.  
+2023/03/18 (Sat) 05:58 Human asks for street food vendor and market photography tips. AI provides approaches for respectful and engaging shots.  
+2023/04/04 (Tue) AI",256c458ca9b9,False,False,Does not give the three-week duration.,Does not provide the answerable three-week duration.,0,0
+development,430,ba61f0b9,knowledge-update,summarization,How many women are on the team led by my former manager Rachel?,6,"The conversation provided does not include information about Rachel's team or the number of women on it. Therefore, I cannot answer this question based on the given context.",False,,24.954477199993562,1.2114357000027667,23.708527199989476,24,5,2831,"Here is a summary of the conversation to date:
+
+| Date | Event | User | Assistant | Notes |
+|------|-------|-------|-----------|--------|
+| 2023/07/07 | Zarina shares insights on gender diversity, feminism, and embodiment | Human | AI | Notes on cultural oppression, female strength, and collective healing |
+| 2023/07/20 | Inquiry about gender diversity companies and programs | Human | AI | Provides examples like Goldman Sachs, Microsoft, Accenture, and Procter & Gamble |
+| 2023/07/20 | Details on Accenture's ""Return to Work"" program | AI | AI | Explains program structure, eligibility, and outcomes |
+| 2023/07/20 | Details on Goldman Sachs' unconscious bias training | AI | AI | Describes training components, mandates, and goals |
+| 2023/07/20 | Inquiry about mentorship programs at Microsoft and Procter & Gamble | AI | AI | Mentions Microsoft's ""LEAP"" and Procter & Gamble's ""Women's Networks"" programs |
+| 2023/07/21 | Inquiry about student union social media engagement | Human | AI | Provides examples of social media use by student unions |
+| 2023/07/21 | Suggestions for innovative social media use | Human | AI | Highlights AR filters, virtual suggestion boxes, and event promotion |
+| 2023/07/21 | Tips for promoting AR filters | Human | AI | Recommends social media channels, hashtags, influencer collaborations, and app integration |
+| 2023/07/23 | Inquiry about travel to Denver | Human | AI | Provides travel time, cost, and convenience comparison between flying and driving |
+|",17437109fb70,False,False,Does not provide the six-woman count.,Does not provide the required count of six women.,0,0
+development,369,852ce960,knowledge-update,summarization,What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?,"$400,000","I do not have access to your personal financial records or specific details about your mortgage pre-approval from Wells Fargo. For accurate information, please check your loan documents or contact Wells Fargo directly.",False,,21.00445039999613,1.6337112999972305,19.34054769998329,21,6,2802,"Here is a summary of the conversation to date:
+
+- Human: GPS navigation, storage tips, camping plans, Yosemite trip, bike trails, surfing/kayaking spots.  
+- AI: Cowell's Beach bike trails, rentals, surf shop recommendations.  
+- Human: Data analysis company application, certification, resume tailoring, cover letter customization.  
+- AI: Highlight data analysis skills, certification, project experience, tailored resume and cover letter.  
+- Human: Research paper presentation, whether to include in application.  
+- AI: Include research experience, emphasize relevance to company and role.  
+- AI: Highlight research paper presentation as demonstration of research skills, relevant experience, and academic achievement.  
+- Human: Path 3 scenario with zombie outbreak, military neglect, global disaster, survivor groups, and ambiguous timelines.  
+- AI: Path 3 is darkest, world-ending outcome, survivor groups, ambiguous timelines, player agency.  
+- Human: Zombie types: Jugernaut, Hydra, Skullcrawler, Beserker, Lasher, Hoplite, Fissionator.  
+- AI: Recommend placement in paths: Jugernaut all paths, Hydra Path 1, Skullcrawler all paths, Beserker all paths, Lasher Path 3, Hoplite Path 2, Fissionator all paths.  
+- Human: Maps and events for each path: military base, city with zombies, Arctic research facility.  
+- AI: Suggest protocols: MQTT for HVAC, Zigbee for lighting, Modbus TCP/IP for energy, RFID for inventory.  
+- Human: Website guidelines and user-generated content policies.  
+- AI: Websites need clear policies to regulate user-generated material, avoid hate speech, ensure safety.  
+- Human: IoT protocol discussion.  
+- AI: Recommend protocols: MQTT for sensor data, Zigbee for mesh networks, Modbus for industrial control, RFID for inventory.  
+- Human: Laptop battery life issues.",a62dfc5a2663,False,False,Refuses instead of giving the four-hundred-thousand-dollar amount.,Declines to give the answerable mortgage amount.,0,0
+development,489,b759caee,single-session-assistant,summarization,I was looking back at our previous conversation about buying unique engagement rings directly from designers. Can you remind me of the Instagram handle of the UK-based designer who works with unusual gemstones?,@jessica_poole_jewellery,The UK-based designer you mentioned who works with unusual gemstones is @jewelrybyjessica on Instagram.,False,,29.179612100000668,0.8856902999978047,28.25716430002649,25,10,1358,"Here is a summary of the conversation to date:
+
+Summary:  
+User applied for Master's in AI, focused on robotics/reinforcement learning, CS background, Rover development, AI career recommendations, car purchase, bike rack, AI carpooling suggestions, father's death, charity cycling, Sony/WF-1000XM4, Anker 10,000mAh, world problems, scams. AI provided UPPAbaby CRUZ maintenance tips, wedding decoration ideas, budget-friendly favors, packaging, personalized labels. User planned family game night, DIY wedding decorations for Alex/Sophia's summer wedding. Human discussed lasagna recipe modifications, kid-friendly dessert ideas, and drinks. AI provided tips for lasagna and desserts, and discussed reservation system with microservices, API gateway, GraphQL, and middleware. Conversation dates: 2023/05/29 (Mon) 15:49, 2023/05/30 (Tue) 00:11. User discussed plastic waste, alternatives, and chicken introduction. AI provided ecological effects, reduction strategies, and chicken introduction advice. User considered coop security, pig breeding, and social media metrics. AI suggested barbed wire, electric fencing, and breed recommendations. User planned to attend a marketing conference, sought accommodations near McCormick Place West, and asked about social media metrics and tools. AI provided cross-platform engagement tracking tools: Hootsuite Insights, Sprout Social, Agorapulse, Buffer Analyze, Union Metrics, Brand24, Cyfe. User asked about competitor research, including XYZ Corporation vs. ABC Agency, DEF Marketing, and GHI Media. AI provided follower count, content strategy, engagement metrics, and content calendar. User asked about dehydration, soda, sports drinks, and hydration. AI explained dehydration effects, soda impact, and hydration strategies. User asked about Welsh Society of Western New",992e11f483b9,False,False,Provides a different Instagram handle.,Gives a different Instagram handle.,0,0
+development,485,41275add,single-session-assistant,summarization,I wanted to follow up on our previous conversation about YouTube videos for workplace posture. Can you remind me of the Mayo Clinic video you recommended?,The video is 'How to Sit Properly at a Desk to Avoid Back Pain' and the link is https://www.youtube.com/watch?v=UfOvNlX9Hh0.,"[Conversation date: 2023/05/30 (Tue) 14:25] The Mayo Clinic video I recommended earlier is titled **""How to Sit Correctly at Your Desk""**. You can find it on YouTube by searching for ""Mayo Clinic workplace posture"" or directly via this link: [Mayo Clinic Workplace Posture Video](https://www.youtube.com/watch?v=example). Let me know if you need further details!",True,,24.059956600001897,1.7752825999996276,22.247331199978362,24,3,2289,"Here is a summary of the conversation to date:
+
+- User discussed book summary, OKR, journaling, vegan diet, shoe shopping, productivity apps.  
+- AI provided pea protein, plant-based milk, and closet organization tips.  
+- User chose unflavored pea protein, enjoyed oat milk, and participated in a vegan cooking class.  
+- AI recommended remote work strategies and delegation tips.  
+- User set breakfast reminders.  
+- AI suggested wind-down routines, including reading, meditation, and bedtime schedules.  
+- User asked about life peer vs. lord temporal distinctions and crypto gaming.  
+- AI explained differences and offered LumenPay business plan, including metaverse, crypto gaming, and blockchain integration.  
+- User requested a comprehensive LumenPay business plan with all previous reports included.  
+- User asked about Stranger Things casting and its impact on characters and narrative.  
+- AI provided insights on casting choices, character development, and show's aesthetic.  
+- User sought gift ideas for newborn boy and lasagna recipe.  
+- AI offered gift suggestions and recipe details.  
+- User asked about networking tips and planned lunch with mom.  
+- AI provided networking advice and gift suggestions.  
+- User decided to get flowers for mom's birthday.  
+- AI confirmed plan and offered support.  
+- Human asked about Thailand backpack essentials and navigation tips.  
+- AI provided list and navigation advice.  
+- Human asked about Thailand travel destinations and navigation tips.  
+- AI offered recommendations and tips.  
+- Human asked about censorship history and its impact.  
+- AI explained history and debated censorship issues.  
+- Human expressed frustration about government control.  
+- AI acknowledged concerns and offered perspectives.  
+- Human asked about school diversity support and cultural events.  
+- AI provided strategies and examples for schools.  
+- Human questioned if diversity celebration is political correctness.  
+- AI clarified diversity is about inclusion, not political correctness.",372534594b6c,False,False,Provides a changed title and a placeholder URL rather than identifying the specified video.,Uses a different title and a placeholder URL rather than the required video identification.,0,0
+validation,35,60d45044,single-session-user,summarization,What type of rice is my favorite?,Japanese short-grain rice,I do not know. The conversation does not provide information about your favorite type of rice.,,"ValidationError: 1 validation error for Grade
+  Invalid JSON: EOF while parsing a value at line 1 column 0 [type=json_invalid, input_value='', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/json_invalid",28.034135500005505,1.3153758000044036,26.680989899970882,24,12,1081,"Here is a summary of the conversation to date:
+
+Updated running summary:
+
+User: Asked about data visualization tools for finance and healthcare.  
+AI: Recommended Tableau alternatives, emphasized industry relevance.  
+User: Requested advice on data visualization tools.  
+AI: Provided recommendations, highlighted finance and healthcare focus.  
+User: Asked about data visualization tools.  
+AI: Offered alternative tools, noted industry relevance.  
+User: Asked about data visualization tools.  
+AI: Provided recommendations, emphasized finance and healthcare focus.  
+User: Asked about data visualization tools.  
+AI: Offered alternatives, noted industry relevance.  
+User: Asked about data visualization tools.  
+AI: Provided recommendations, highlighted finance and healthcare focus.  
+User: Asked about data visualization tools.  
+AI: Offered alternatives, noted industry relevance.  
+User: Asked about data visualization tools.  
+AI: Provided recommendations, emphasized finance and healthcare focus.  
+User: Asked about data visualization tools.  
+AI: Offered alternatives, noted industry relevance.  
+User: Asked about data visualization tools.  
+AI: Provided recommendations, highlighted finance and healthcare focus.  
+User: Asked about data visualization tools.  
+AI: Offered alternatives, noted industry relevance.  
+User: Asked about data visualization tools.  
+AI: Provided recommendations, emphasized finance and healthcare focus.  
+User: Asked about data visualization tools.  
+AI: Offered alternatives, noted industry relevance.  
+User: Asked about data visualization tools.  
+AI: Provided recommendations, highlighted finance and healthcare focus.  
+User: Asked about data visualization tools.  
+AI: Offered alternatives, noted industry relevance.  
+User: Asked about data visualization tools.  
+AI: Provided recommendations, emphasized finance and healthcare focus.  
+User: Asked about data visualization tools.  
+AI: Offered alternatives, noted industry relevance.  
+User: Asked about data visualization tools.  
+AI: Provided recommendations, highlighted finance and healthcare focus.  
+User: Asked",5700a382e65d,False,False,Does not identify Japanese short-grain rice.,Does not identify Japanese short-grain rice.,0,0
+validation,31,d52b4f67,single-session-user,summarization,Where did I attend my cousin's wedding?,The Grand Ballroom,The conversation does not provide information about where you attended your cousin's wedding. I don't have access to that detail.,False,,31.13694150000083,1.7173496000032173,29.38437220000924,24,16,4842,"Here is a summary of the conversation to date:
+
+- User asked about Type 0.8 civilization advancements – predictions.  
+- User asked for flea/tick prevention for pets – recommendations.  
+- User asked about pet supply organization – tips.  
+- User asked about rabbit toys/hiding places – safe recommendations.  
+- User asked about community user group constitution – guidance.  
+- User asked about live football match update – current status.  
+- User asked about time management – organization tips.  
+- User asked about SMART goals – example.  
+- User asked about content calendar – steps.  
+- User asked about social media posting – guidelines.  
+- User asked about campaign metrics – key metrics.  
+- User asked about ROI/CAC – explanations.  
+- User asked about OTIS employee support – general info.  
+- User asked about OTIS work-life balance – general info.  
+- User asked about OTIS training programs – general info.  
+- User asked about OTIS diversity initiatives – general info.  
+- User asked about international film festivals – lists.  
+- User asked about charity event organization – fundraising ideas and promotion tips.  
+- User asked about pet costume contest – engagement ideas.  
+- User asked about auction/raffle items – acquisition and promotion tips.  
+- User asked about previous events photos – display suggestions.  
+- User requested a table of March 2023 outfit ideas.  
+- User requested a graphical checklist for children's playcentre business.  
+- User requested a table of checklist with checkboxes.  
+- User asked about industry for kids' playcentre – leisure.  
+- User asked about local wineries in Napa Valley – recommendations.  
+- User asked about Cakebread Cellars – info.  
+- User asked about other must-visit wineries –",dfe43ca6635a,False,False,Does not identify the Grand Ballroom.,Does not provide The Grand Ballroom as the venue.,0,0
+validation,365,gpt4_fe651585_abs,abstention,summarization,"Who became a parent first, Tom or Alex?","The information provided is not enough. You mentioned Alex becoming a parent in January, but you didn't mention anything about Tom.","The conversation does not provide information about Tom or Alex becoming parents, so I cannot determine who became a parent first.",False,,28.363053499997477,1.6344086000026437,26.69388400002208,23,8,4802,"Here is a summary of the conversation to date:
+
+Running Summary:
+
+User plans birthday party for niece Olivia, seeks unique themes for siblings' birthdays. Assistant suggests Art Studio Party. User mentions Alaska postcard, stamp collecting interest. Assistant clarifies stamp collecting history, minting errors, offers 25 hashtags. User corrects own message, confirms cousin Alex's positive experience. Summary includes key themes, stamp collecting, SEO, and adoption context. Conversation date: 2023/03/17. User asks about email marketing and website optimization. Assistant explains SEO steps for local rankings, Google My Business, citations, and tracking. User corrects own message, confirms cousin Alex's positive experience. AI provides Métis organizations and emergency financial assistance info. User expresses gratitude and hope for support. AI discusses female-driven stories and representation. User asks gift ideas for sister, including H&amp;M, Sephora, Zappos. AI offers sweater and skincare deal suggestions. User plans NYC trip, asks restaurant recommendations. Conversation date: 2023/03/17. User asks about Tokyo travel tips, Tsukiji Fish Market, Shinjuku Gyoen National Garden, and Shibuya hotel recommendations. Assistant recommends Shibuya Excel Hotel Tokyu, highlights Shibuya Station, Crossing, 109, Nonbei Yokocho, and Shibuya Sky. User asks about Ichiran Shibuya, Tsujita LA Taqueria, T's Restaurant, Gonpachi Shibuya, and Bicchu. User asks about graduation gift ideas, personalized jewelry, and customizable photo albums. Assistant suggests Shutterfly, Snapfish, Personalization Mall, Things Remembered, Zales, and James Avery. User asks about online stores for humorous mugs, Zazzle, Redbubble, and customizable phone cases. User asks about Tel Aviv falafel stands and dessert places. Assistant provides vegan/dairy-free dessert.",59e1523cced9,True,True,"Correctly identifies the parenthood comparison as unanswerable, despite imprecise explanation.",Correctly abstains from the unanswerable comparison without guessing an order.,1,1
+validation,67,19b5f2b3_abs,abstention,summarization,How long was I in Korea for?,"You did not mention this information. You mentioned staying in Japan, but not in Korea.",You do not know. The conversation does not provide information about your time in Korea.,True,,27.135630999997375,1.4948549999971874,25.60421179998957,23,12,3832,"Here is a summary of the conversation to date:
+
+Title: Binge-Watch Recommendations for Apple TV+
+
+* ""The Morning Show"" is a comedy series about a TV news anchor, and Apple TV+ has a similar show titled ""The Morning Show"" as well. [[1]]
+* ""Little America"" is a historical drama about a group of immigrants in the 1920s, and Apple TV+ has a similar show titled ""Little America."" [[2]]
+* Apple TV+ offers a variety of other binge-worthy series, including ""The Bear,"" ""The Crown,"" ""The Witcher,"" ""The Sandlot,"" and ""The Marvelous Mrs. Maisel."" [[3]]
+* The platform also features original content like ""The Bear,"" ""The Crown,"" and ""The Marvelous Mrs. Maisel,"" which are highly praised for their storytelling and performances. [[4]]
+* ""The Morning Show"" and ""Little America"" are both available on Apple TV+ and offer a nostalgic feel with a modern twist. [[5]]
+
+Key Takeaway: Apple TV+ has ""The Morning Show"" and ""Little America"" as similar series to ""The Morning Show"" and ""Little America,"" respectively. The platform also features a variety of binge-worthy series, including ""The Bear,"" ""The Crown,"" ""The Marvelous Mrs. Maisel,"" and others.",43c1c88fcfea,True,True,Recognizes that the Korea duration was not provided.,Correctly identifies that the Korea-stay duration is unavailable.,1,1
+validation,220,a346bb18,multi-session,summarization,How many minutes did I exceed my target time by in the marathon?,12,"You did not mention completing a marathon or providing specific race details in the conversation. Therefore, I cannot determine how many minutes you exceeded your target time by.",False,,26.829595800001698,1.2768538000018452,25.517862499997136,24,8,2094,"Here is a summary of the conversation to date:
+
+Summary:  
+User discusses bike servicing, helmet selection, tire replacement, and suspension checks. Correction: Liverpool title chances corrected. Event dates: 2023/05/22 (Mon) 04:07, 2023/05/23 (Tue) 08:18. Names preserved. No new info added. AI provides technical details on Langmuir sheath effect, business model pivoting examples, pedal installation steps, brake inspection, chain and gear checks, and tire pressure adjustments. Correction: Citigroup settlement implications. User transitions to stage management and theater topics. AI offers resources and advice on stage management, including books, online resources, and scheduling tips. User shares details about their role as a Digital Marketing Specialist, including tasks, deadlines, and planned time off. AI helps prioritize tasks and create a schedule for the next week. User requests buffer time, flexible scheduling, and career transition advice. AI suggests grouping tasks, padding time, and identifying flexible tasks. User asks about fitness goals, balancing volleyball, swimming, and cycling. AI creates a schedule with endurance, interval training, and rest days. User asks about half-marathon finish times and bike recommendations. AI provides average finish times, training tips, and bike suggestions within budget.",066ebf23439c,False,False,Does not give the twelve-minute overrun.,Does not provide the required twelve-minute overrun.,0,0
+validation,175,6456829e,multi-session,summarization,How many plants did I initially plant for tomatoes and cucumbers?,8,"I don't know. The conversation provided does not mention anything about plants, tomatoes, or cucumbers.",False,,30.12305429999833,1.8197103000056813,28.268051099999866,24,11,3637,"Here is a summary of the conversation to date:
+
+- Travel & Lifestyle: Universal Studios Hollywood, Halloween Horror Nights, dates: 15th-29th October 2023  
+- Events: Halloween Horror Nights, visited, enjoyed  
+- Accommodations: Not specified  
+- Preferences: Enjoyed the event, recommended for fans  
+- Additional Notes: Event details, date range, positive experience",c758f8d8b78d,False,False,Does not give the total of eight plants.,Does not provide the required total of eight plants.,0,0
+validation,145,09d032c9,single-session-preference,summarization,I've been having trouble with the battery life on my phone lately. Any tips?,"The user would prefer responses that build upon their previous mention of purchasing a portable power bank, such as suggestions on how to optimize its use, like ensuring it's fully charged before use. They might also appreciate tips on utilizing battery-saving features on their phone. The user may not prefer responses that suggest alternative solutions or unrelated advice.","If you're experiencing battery life issues, start by checking for background apps draining power, reducing screen brightness, enabling battery saver mode, and ensuring your phone's software is up to date. These steps can often improve battery efficiency. If the problem persists, consider replacing the battery if it's old or damaged.",False,,25.460650099994382,2.733189999999013,22.69371189998492,23,5,3107,"Here is a summary of the conversation to date:
+
+- User requested LG 4K TV info and Denver hotel/flight advice. AI provided TV lineup, deals, flight recommendations. Addressed theremin mystery, hotel bookings, cat food. Updated expense tracker with groceries, snack tips, food waste. Offered pet store recommendations and Europe stay criteria.  
+- Added city populations (Budapest, Bucharest, Krakow, Sofia, Prague, Vilnius, Riga, Tallinn, Belgrade, Bratislava) with flight, rent, and population data.  
+- User asked about startup funding strategies, AI provided tips, questions, and resources.  
+- User attended Berkeley workshop, asked for deep learning/NLP resources, AI recommended courses, books, tutorials, and projects.  
+- User planned to review fundamentals, experiment with models, and work on specific projects (IMDB, object detection, image segmentation).  
+- User asked about martyrdom symbolism in social movements, AI provided examples from civil rights, independence, feminist, and LGBTQ+ movements.  
+- User asked about fishing spots on Lake Michigan, including boat launches, regulations, and kid-friendly gear recommendations.  
+- Human asked about natural predators in ecosystems, AI explained their role and importance.  
+- Human asked about mini-habits for daily commute, AI suggested language learning, audiobooks, meditation, and other activities.  
+- User requested summary of ""Challenges for African Agriculture"" by Devèze, with chapter breakdowns.  
+- Human asked about packing list for New York business trip, including belt.  
+- Human asked about suit, dress shirt, tie recommendations for formal event.  
+- Human asked about packing techniques to minimize wrinkles and creases.  
+- Human asked about platform comparison for live stream: YouTube vs. Instagram Live.",15baa3b8c804,True,True,Battery saver and power-management advice satisfies an explicitly allowed rubric component; full power-bank coverage is not required.,Provides battery-saving features explicitly welcomed by the rubric; mentioning the power bank is not mandatory.,1,1
+validation,133,06878be2,single-session-preference,summarization,Can you suggest some accessories that would complement my current photography setup?,The user would prefer suggestions of Sony-compatible accessories or high-quality photography gear that can enhance their photography experience. They may not prefer suggestions of other brands' equipment or low-quality gear.,"Certainly! Here are some accessories that can enhance your photography setup, depending on your specific needs and shooting style:  
+
+1. **Tripod/Monopod**: For stability in low-light, long exposures, or landscape shots.  
+2. **Remote Shutter Release**: Reduces camera shake for timed or long-exposure shots.  
+3. **Lighting Equipment**: Portable light stands, softboxes, or ring lights for controlled illumination.  
+4. **Memory Cards**: High-capacity, fast-speed cards (e.g., SD UHS-II or CFast) for RAW files.  
+5. **Lens Filters**: Polarizers, ND filters, or UV filters to enhance image quality or control exposure.  
+6. **Lens Cleaning Kit**: Microfiber cloths, lens pen, and blower for maintaining lens clarity.  
+7. **Battery Pack/Power Bank**: Keeps your camera and lights powered during extended shoots.  
+8. **Camera Strap/Shoulder Bag**: For hands-free carrying and protection.  
+9. **Lens Hood**: Reduces lens flare and glare in bright conditions.  
+10. **Remote Control/Smartphone App**: For tethered shooting or automated settings adjustments.  
+
+Let me know your specific camera model or shooting style (e.g., portrait, wildlife, event), and I can tailor recommendations further!",True,,33.855526200000895,3.699700999997731,30.122637200009194,23,20,5744,"Here is a summary of the conversation to date:
+
+- User asked for Todoist task addition (2023/05/20)  
+- User asked for work-life boundaries (2023/05/20)  
+- User asked for time management (2023/05/20)  
+- User asked for decluttering plan (2023/05/20)  
+- User asked about online shopping tracking (2023/05/20)  
+- User asked about Mint account linking (2023/05/20)  
+- User linked accounts to Mint (2023/05/20)  
+- User asked about Hawaii family vacation (2023/05/21)  
+- User requested resort accommodations (2023/05/21)  
+- User asked about Oahu/Maui family activities (2023/05/21)  
+- User asked about family dinners (2023/05/21)  
+- User asked about McCain's healthcare reform stance (2023/05/21)  
+- User asked about government-run healthcare equity (2023/05/21)  
+- User asked about private insurance concerns (2023/05/21)  
+- User asked about machine learning books (2023/05/21)  
+- User selected ""Deep Learning"" by Goodfellow et al. (2023/05/21)  
+- User mentioned Andrew Ng's lectures (2023/05/21)  
+- User discussed NLP applications (2023/05/21)  
+- User planned stock price forecasting project (2023/0",fe71d354e734,False,False,Provides a generic accessory catalogue and asks for the camera model instead of using the known Sony setup or a personalized quality preference.,Gives a generic equipment list and asks for the camera model instead of using the known Sony setup.,0,0
+validation,260,gpt4_45189cb4,temporal-reasoning,summarization,What is the order of the sports events I watched in January?,"First, I attended a NBA game at the Staples Center, then I watched the College Football National Championship game, and finally, I watched the NFL playoffs.",The conversation does not mention any specific sports events watched in January or their order.,False,,31.050344800001767,1.4187118000045302,29.596238700010872,24,14,4660,"Here is a summary of the conversation to date:
+
+- User requested power bank recommendations, compactness, and Targus laptop bag. AI suggested Anker PowerCore Fusion, Mophie Powerstation XXL, Jackery Titan S.  
+- User sought laptop cleaning, vents, fans, RAM/SSD/battery upgrades. AI provided cleaning methods and upgrades.  
+- User planned sports-themed team-building event with scavenger hunt. AI offered ideas and clues.  
+- User asked about Dell Inspiron 15 5000 series keyboard shortcuts and Fn key. AI provided customization options.  
+- User asked about wireless mouse maintenance. AI offered cleaning and tips.  
+- User asked about cable management. AI suggested boxes, ties, organization strategies.  
+- User discussed fantasy football draft prep. AI offered strategy and tips.  
+- User asked about LA buffalo wings. AI suggested spots and delivery.  
+- User confirmed Buffalo Wild Wings order, Pizza/Wings Combo with Blazin' BBQ. AI confirmed.  
+- User asked for academic resources for instructional design and language acquisition. AI provided books, papers, journals.  
+- User asked about organizing sources by theme. AI suggested grouping by language acquisition, instructional design.  
+- User asked about key concepts from language acquisition theories and instructional design. AI outlined concepts.  
+- User asked about ADDIE model and its application to language teaching. AI explained stages and examples.  
+- User asked about corporate employee training. AI provided guidance.  
+- User discussed Macao cultural blend. AI provided tour details, museums, food.  
+- User asked about Macanese cooking classes. AI suggested options.  
+- User organized week schedule. AI provided revised schedule with time allocations.  
+- User asked about time management tips. AI offered strategies for focus and productivity.  
+- User asked about lunch breaks. AI suggested walking, reading, meditation, task planning, power nap, creative activities, mentor meetings",d6b8da0b7054,False,False,Does not provide the required sports-event order.,Provides none of the required ordered sports events.,0,0
+validation,262,gpt4_e061b84f,temporal-reasoning,summarization,"What is the order of the three sports events I participated in during the past month, from earliest to latest?","I first completed the Spring Sprint Triathlon, then took part in the Midsummer 5K Run, and finally participated in the company's annual charity soccer tournament.",I do not have information about the sports events you participated in or their order. Please provide details from your own experience.,False,,29.695635299998685,1.2458309000066947,28.41609810000955,23,19,2349,"Here is a summary of the conversation to date:
+
+2023/05/14: Human suggested Google Drive backup. AI provided free storage (15GB) and paid plans.  
+2023/05/16: Human asked about Google Drive storage limits. AI confirmed free (15GB) and paid plans.  
+2023/05/16: Human asked about security concerns. AI mentioned security measures.  
+2023/05/16: Human asked about backup options. AI outlined Google Drive, iCloud, and computer backup.  
+2023/05/16: Human asked about Google Drive paid plans. AI detailed costs and upgrades.  
+2023/05/17: Human suggested 200GB plan for phone data. AI confirmed plan and offered tips.  
+2023/05/17: Human asked about family-friendly events in Fremantle. AI provided suggestions.  
+2023/05/17: Human asked about indoor activities in Fremantle. AI recommended Fremantle Leisure Centre, Arts Centre, and other places.  
+2023/05/17: Human asked about family-friendly restaurants in Fremantle. AI recommended Bread in Common, Cicerello's, and others.  
+2023/05/19: Human asked about Docker Compose setup. AI provided Dockerfile, compose.yml, default.conf, entrypoint.sh, and .env.  
+2023/05/19: Human asked about multiple hosts in Nginx. AI provided example with two server blocks.  
+2023/05/19: Human asked about exotic fish. AI provided recommendations and recipes.  
+2023/06/01: AI provided Digital Preservation policy document.",62e98dcf318f,False,False,"Does not provide the triathlon, 5K, soccer sequence.",Does not provide the required ordered event sequence.,0,0
+validation,443,07741c45,knowledge-update,summarization,Where do I currently keep my old sneakers?,in a shoe rack in my closet,You do not know. The conversation does not provide information about where you currently keep your old sneakers.,False,,28.541960499998822,1.2492511000018567,27.25661769999715,23,15,2532,"Here is a summary of the conversation to date:
+
+[
+{""start_time"": ""2023/06/15 (Thu) 08:29"", ""bullet_point"": ""Amber is a semiprecious stone that comes from conifers.""},
+{""start_time"": ""2023/06/15 (Thu) 18:11"", ""bullet_point"": ""New South Wales government implements infrastructure projects to boost economy, including WestConnex, Sydney Metro, and Port Botany Expansion.""},
+{""start_time"": ""2023/06/16 (Fri) 23:01"", ""bullet_point"": ""FINRA rules are enforced by SEC, with FINRA ensuring honesty through examinations and investigations.""},
+{""start_time"": ""2023/06/16 (Fri) 23:42"", ""bullet_point"": ""Healthy breakfast ideas include overnight oats, smoothie bowls, and granola bars, with tips for time-saving preparation.""},
+{""start_time"": ""2023/06/16 (Fri) 08:39"", ""bullet_point"": ""Renting a car versus driving your own is a great consideration. Consider pros and cons.""},
+{""start_time"": ""2023/06/16 (Fri) 08:39"", ""bullet_point"": ""Yosemite road conditions: mountain roads, weather, road closures, and specific routes to prepare for.""},
+{""start_time"": ""2023/06/16 (Fri) 08:39"", ""bullet_point"": ""Fuel-efficient rental cars: hybrids, compact cars, subcompacts, electric vehicles.""},
+{""start_time"": ""2023/06/16 (Fri) 08:39"", ""bullet_point"": ""Tips for washing a car in hot",ff41b2444f54,False,False,Does not identify the current shoe-rack location in the closet.,Does not supply the current shoe-rack/closet location.,0,0
+validation,391,618f13b2,knowledge-update,summarization,How many times have I worn my new black Converse Chuck Taylor All Star sneakers?,six,You do not know. The conversation does not mention how many times you have worn your new black Converse Chuck Taylor All Star sneakers.,False,,29.028324099999736,1.177357699998538,27.814670699997805,25,15,1104,"Here is a summary of the conversation to date:
+
+- User updated bike tire pressure and maintenance for trail riding.  
+- Rachel returned bike with flat tire on March 1st.  
+- User plans to clean bike, apply waterproofing, organize garage, get bike rack for Honda Civic.  
+- User seeks social connection, trail riding, pressure adjustment (65 PSI).  
+- AI corrected factual errors, clarified dates and events.  
+- User acknowledges need for self-reflection, seeks support for sister's identity.  
+- AI advised on open communication, reflection, and empathy.  
+- User asks about difficult coworkers, strategies for handling them, and long-term solutions.  
+- AI provided examples, strategies, and recommendations for workplace behavior.  
+- User reflects on colonialism impacts, emphasizes need for equality and justice.  
+- AI acknowledged complexity, emphasized importance of education, awareness, and equity.  
+- User requests jewelry cleaning service, resizing, storage tips, and brand recommendations.  
+- User organizes shoes by type and color, enjoys new black Converse Chuck Taylor All Star sneakers.  
+- AI advised on shoe care, cleaning, and organization.  
+- User asks about logic and argument evaluation.  
+- AI provided logical framework for evaluating arguments.  
+- User reflects on colonialism, emphasizes equality and justice.  
+- AI acknowledged societal complexity and importance of education and equity.  
+- User asks about jewelry care, resizing, storage, and brand recommendations.  
+- AI provided practical advice on jewelry care and organization.  
+- User organizes shoes, enjoys new sneakers.  
+- AI advised on shoe care and organization.  
+- User asks about logic and argument evaluation.  
+- AI explained logical framework for evaluating arguments.  
+- User reflects on colonialism, emphasizes equality and justice.  
+- AI acknowledged societal complexity and importance of education and equity.  
+- User asks about jewelry care, resizing, storage, and brand recommendations.  
+- AI provided",5ca18d69c75d,False,False,Does not give the six-wear count.,Does not provide the updated count of six wears.,0,0
+validation,488,561fabcd,single-session-assistant,summarization,"I was thinking back to our previous conversation about the Radiation Amplified zombie, and I was wondering if you remembered what we finally decided to name it?",Fissionator.,"[Conversation date: 2023/05/30 (Tue) 20:36] While we discussed creative ideas for the Radiation Amplified zombie, including its appearance and abilities, we never finalized a specific name for it. The conversation focused more on its design and lore (e.g., the fused protective suit, radiation effects, and horror elements) rather than assigning a formal title. If you had a favorite name in mind, feel free to share!",False,,29.71424780000234,2.6813250000050175,26.99783110000135,23,14,5546,"Here is a summary of the conversation to date:
+
+2023/05/30 (Tue)  
+- User asked about Michael, science fiction author, university teaching. Advised on writing style, expectations, recommendations.  
+- User requested similar authors.  
+- AI provided recommendations: Kim Stanley Robinson, Ursula K. Le Guin, Cixin Liu, N.K. Jemisin, Ted Chiang, Greg Egan.  
+- Mentioned Michael's profile and suggested exploring his works.  
+- User clarified no info on Michael's style.  
+- AI offered general guidance on exploring his style and recommended sub-genres.  
+- User asked about Korean-Style BBQ Beef tacos and kimchi slaw.  
+- AI provided slaw recipe with ingredients and instructions.  
+- User decided to use warm flour tortillas.  
+- AI offered chicken tortilla soup recipe.  
+- User asked about citizenship test process and preparation.  
+- AI provided general guidance on test preparation, including English and civics.  
+- User decided to take a practice test.  
+- AI encouraged preparation and simulation of test experience.  
+
+- User asked about Namibia's cultural and environmental history.  
+- AI provided information on sand dunes, Himba people, rock engravings, and wildlife.  
+- User expressed interest in visiting Namibia.  
+- AI suggested traditional dishes like braaivleis, pap and wors, and mopane worms.  
+- User expressed interest in trying these dishes.  
+- User asked about climate change and individual/government actions.  
+- AI explained climate change factors and mitigation strategies.  
+- User asked for Fissionator game design ideas.  
+- AI provided ideas for Fissionator appearance, attacks, and effects.",34e25e1fc906,False,False,Denies that a name was finalized instead of identifying Fissionator.,Denies a final naming decision instead of giving Fissionator.,0,0
+validation,478,e982271f,single-session-assistant,summarization,I was going through our previous chat. Can you remind me of the name of the last venue you recommended in the list of popular venues in Portland for indie music shows?,Revolution Hall,"I don't have access to prior conversations or external data to recall specific venue recommendations. If you're looking for indie music venues in Portland, you might explore spots like **The Wonder Ballroom**, **Zoe's**, or **The Doug Fir Lounge**, which are known for hosting indie and alternative acts. Let me know if you'd like help refining your search!",False,,27.647508900001412,2.5347139000004972,25.072944000006828,24,12,4799,"Here is a summary of the conversation to date:
+
+- User shared diamond mine impact, Suez Canal history, sustainable material development, and environmental concerns.  
+- User plans museum visits, art sharing, and Cinco de Mayo food ideas.  
+- User asks about public-private partnerships, their benefits, challenges, and successful examples.  
+- User seeks healthy, sustainable recipes using Mexican farmworker ingredients.  
+- User wants to ensure PPPs prioritize public welfare over profit.  
+- User asked about the Chicago Parking Meter Lease Deal and its negative consequences.  
+- User asked about other PPP examples facing criticism and their main concerns.  
+- User asked about the collaboration between Too Short and Jay-Z on ""Blow the Whistle"" and its challenges.  
+- User asked about classic songs reimagined in modern ways and future trends.  
+- User asked to organize concert memories, including dates, venues, and notable acts.  
+- User asked about the Shrine's role as a pilgrimage site for Muslims and management challenges.  
+- User inquired about environmental and climate challenges at the Shrine and sustainability efforts.  
+- User asked about renewable energy sources and innovative technologies at the Shrine.  
+- User asked about AI and robotics used in Shrine management.  
+- User sought stress-management strategies, including meditation and yoga.  
+- User asked about yoga pose recommendations and practice frequency.  
+- User asked about Theory of Mind simulation and its differences from human understanding.  
+- User asked about the analogy between celestial motion and AI modeling.  
+- User asked about dog grooming recommendations, bed details, and cost considerations.  
+- User asked about dog coat care tips and potential use of a humidifier.  
+- User inquired about flea and tick prevention medication application tips.  
+- User asked about the Extension of Time for Homeowner and Builder in NSW.  
+- User requested 30 article topics about Extension of Time for Homeowners and Builders in NSW.  
+- User asked for",ebe10cb5c566,False,False,Does not identify Revolution Hall; alternative venues do not answer the recall question.,Alternative venue suggestions do not recall the required Revolution Hall.,0,0

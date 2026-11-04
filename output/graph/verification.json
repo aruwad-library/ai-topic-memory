@@ -1,0 +1,114 @@
+{
+  "dataset_index": 0,
+  "question_id": "e47becba",
+  "question": "What degree did I graduate with?",
+  "reference": "Business Administration",
+  "answer": "You graduated with a degree in Business Administration.",
+  "full_nodes": 2331,
+  "full_entity_nodes": 2184,
+  "full_source_chunks": 147,
+  "full_relations": 1937,
+  "full_display_edges": 1917,
+  "retrieved_nodes": 14,
+  "retrieved_relations": 9,
+  "retrieved_display_edges": 9,
+  "retrieved_blocks": 10,
+  "text_only_blocks": 3,
+  "retrieved_relation_triples": [
+    [
+      "Calm",
+      "also offers",
+      "masterclasses on wellness topics"
+    ],
+    [
+      "Education and awareness",
+      "can help change",
+      "attitudes and behaviors towards wildlife"
+    ],
+    [
+      "I",
+      "celebrate success",
+      "achievement"
+    ],
+    [
+      "education and awareness-raising",
+      "can benefit",
+      "men and boys"
+    ],
+    [
+      "role modeling by male leaders",
+      "sends a powerful message to",
+      "men and boys"
+    ],
+    [
+      "user",
+      "improves",
+      "identification skills"
+    ],
+    [
+      "user",
+      "is taking",
+      "an online course on diversity and inclusion"
+    ],
+    [
+      "user",
+      "will create",
+      "a mentorship program"
+    ],
+    [
+      "user",
+      "will reach out to",
+      "local community colleges"
+    ]
+  ],
+  "scope": "Retrieved subgraph contains only explicit relation hints actually included in the final answer context; supplementary dialogue is not represented as graph edges.",
+  "node_and_edge_subset_validated": true,
+  "all_other_cells_preserved": true,
+  "only_updated_output_cells": [
+    28,
+    29
+  ],
+  "degree_evidence_blocks": [
+    1
+  ],
+  "degree_relation_hints": [],
+  "date_local": "2026-11-05",
+  "timezone": "Asia/Seoul",
+  "execution_scope": "Targeted fresh-kernel setup, one Graph RAG example and visualization; not a full benchmark rerun.",
+  "browser_validation": [
+    {
+      "name": "graph_full",
+      "nodes": 2331,
+      "edges": 1917,
+      "canvas": true,
+      "viewScale": 0.14757424829367274,
+      "errors": [],
+      "externalRequests": []
+    },
+    {
+      "name": "graph_retrieved",
+      "nodes": 14,
+      "edges": 9,
+      "canvas": true,
+      "viewScale": 0.9174311926605504,
+      "errors": [],
+      "externalRequests": []
+    }
+  ],
+  "degree_evidence": "Conversation excerpts:\nuser: [Conversation date: 2023/05/30 (Tue) 17:27] I graduated with a degree in Business Administration, which has definitely helped me in my new role. Do you have any advice on how to stay organized when it comes to paperwork and documentation, especially when it comes to tracking expenses and reimbursements?\nassistant: [Conversation date: 2023/05/30 (Tue) 17:27] Congratulations on your degree in Business Administration! That's a great foundation for your new role.\n\nStaying organized with paperwork and documentation is crucial, especially when it comes to tracking expenses and reimbursements. Here are some tips to help you stay on top of it:",
+  "degree_entity_present_in_full_graph": true,
+  "parser_checks": [
+    "modern hybrid",
+    "legacy",
+    "graph-only section",
+    "bare relation",
+    "text-only",
+    "unknown relation rejected"
+  ],
+  "files_sha256": {
+    "utils.py": "2798b817d1d61f3cd40b33263305a0fac6c7e2ee403ace4cd2e1f8a20f3e94d3",
+    "1_Long_Memory.ipynb": "f3ae04d368fbf933a797fe27276388eaaec4f2848f62d9f9f31c7f9ee87d7e21",
+    "output\\graph\\graph_full.html": "155afc0f1e0d2623ae106f18a52bd3532cb8d8746901856833c76514592adc59",
+    "output\\graph\\graph_retrieved.html": "246186fcbf76caa99d9a1ff29651a1c4cfabbb00ccd35c8c4784278cff36d0dc"
+  }
+}
