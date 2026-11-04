@@ -35,6 +35,10 @@ qdrant-client
 ir-measures
 fastembed
 faiss-cpu
+rank-bm25
+llama-index-core
+llama-index-llms-ollama
+llama-index-embeddings-langchain
 
 
 # Agent
@@ -60,3 +64,4 @@ plotly
 bs4
 pygraphviz
 grandalf
+pyvis
