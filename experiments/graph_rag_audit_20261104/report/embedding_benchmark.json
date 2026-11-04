@@ -1,0 +1,57 @@
+{
+  "model": "BAAI/bge-small-en-v1.5",
+  "device": "cpu",
+  "torch_num_threads": 4,
+  "torch_num_interop_threads": 1,
+  "load_seconds": 10.599828099999286,
+  "count_per_set": 128,
+  "sets": {
+    "short": {
+      "mean_characters": 113.15625,
+      "batch_measurements": {
+        "sync_10": {
+          "seconds": 0.5281079999986105,
+          "max_abs_diff_from_sync_10": 0.0,
+          "mean_cosine_to_sync_10": 1.0,
+          "allclose_atol_1e-6": true
+        },
+        "async_10": {
+          "seconds": 1.4845512000028975,
+          "max_abs_diff_from_sync_10": 1.4901161193847656e-07,
+          "mean_cosine_to_sync_10": 0.9999999999998329,
+          "allclose_atol_1e-6": true
+        },
+        "sync_32": {
+          "seconds": 0.4990068000006431,
+          "max_abs_diff_from_sync_10": 0.0,
+          "mean_cosine_to_sync_10": 1.0,
+          "allclose_atol_1e-6": true
+        }
+      }
+    },
+    "long": {
+      "mean_characters": 2119.140625,
+      "batch_measurements": {
+        "sync_10": {
+          "seconds": 10.326355799999874,
+          "max_abs_diff_from_sync_10": 0.0,
+          "mean_cosine_to_sync_10": 1.0,
+          "allclose_atol_1e-6": true
+        },
+        "async_10": {
+          "seconds": 9.097652099997504,
+          "max_abs_diff_from_sync_10": 0.0,
+          "mean_cosine_to_sync_10": 1.0,
+          "allclose_atol_1e-6": true
+        },
+        "sync_32": {
+          "seconds": 11.134809200000745,
+          "max_abs_diff_from_sync_10": 0.0,
+          "mean_cosine_to_sync_10": 1.0,
+          "allclose_atol_1e-6": true
+        }
+      }
+    }
+  },
+  "warmup_seconds": 0.04127540000263252
+}

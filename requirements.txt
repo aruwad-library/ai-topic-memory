@@ -57,6 +57,7 @@ deepagents
 wikipedia-api
 
 # Misc
+nbclient
 kaggle
 kagglehub
 openpyxl

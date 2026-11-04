@@ -1,0 +1,276 @@
+{
+  "scope": "Read-only diagnosis of the eight final Graph RAG errors; no generation, retrieval rerun, model inference, code changes, or held-out tuning.",
+  "method": "Compared saved final retrieved text with local dataset answer_session_ids and marked has_answer turns where available. Annotations used for diagnosis only, never retrieval. Quoted present/absent facts validated programmatically.",
+  "summary": {
+    "missing_evidence": 3,
+    "evidence_present_generation_or_interpretation": 4,
+    "mixed_missing_confirmation_and_identity": 1
+  },
+  "cases": [
+    {
+      "id": "852ce960",
+      "dataset_index": 369,
+      "split": "development",
+      "question_type": "knowledge-update",
+      "question": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+      "reference": "$400,000",
+      "candidate": "The amount you were pre-approved for from Wells Fargo was **$350,000**.",
+      "classification": "evidence_present_recency_error",
+      "diagnosis": "8월의 $350,000과 11월의 $400,000을 모두 검색했지만, 답변이 더 오래된 금액을 선택했다. 최신 값 선택 실패다.",
+      "retrieved_evidence": [
+        {
+          "blocks_1_based": [
+            1
+          ],
+          "quote": "I got pre-approved for $350,000 from Wells Fargo."
+        },
+        {
+          "blocks_1_based": [
+            2
+          ],
+          "quote": "remember when I got pre-approved for $400,000 from Wells Fargo?"
+        }
+      ],
+      "missing_support": [],
+      "authoritative_support_session_ids": [
+        "answer_3a6f1e82_1",
+        "answer_3a6f1e82_2"
+      ]
+    },
+    {
+      "id": "a346bb18",
+      "dataset_index": 220,
+      "split": "held_out",
+      "question_type": "multi-session",
+      "question": "How many minutes did I exceed my target time by in the marathon?",
+      "reference": "12",
+      "candidate": "You did not provide your actual marathon completion time, so there is no data to calculate how many minutes you exceeded your target time by.",
+      "classification": "missing_evidence",
+      "diagnosis": "목표 기록 4시간 10분은 검색됐지만 실제 완주 기록 4시간 22분이 빠졌다. 262−250=12분 계산에 필요한 두 번째 피연산자가 없다.",
+      "retrieved_evidence": [
+        {
+          "blocks_1_based": [
+            1
+          ],
+          "quote": "my target time for the marathon was 4 hours and 10 minutes"
+        }
+      ],
+      "missing_support": [
+        {
+          "source_session_id": "answer_4934b2d7_1",
+          "source_conversation_date": "2023/05/25 (Thu) 13:48",
+          "quote": "I just completed my first full marathon in 4h 22min",
+          "absent_marker": "4h 22min"
+        }
+      ],
+      "authoritative_support_session_ids": [
+        "answer_4934b2d7_2",
+        "answer_4934b2d7_1"
+      ]
+    },
+    {
+      "id": "6456829e",
+      "dataset_index": 175,
+      "split": "held_out",
+      "question_type": "multi-session",
+      "question": "How many plants did I initially plant for tomatoes and cucumbers?",
+      "reference": "8",
+      "candidate": "You initially planted 5 tomato plants. The conversation does not specify the initial number of cucumber plants.",
+      "classification": "evidence_present_overly_strict_inference",
+      "diagnosis": "토마토 5개와 오이 3개가 모두 검색됐고 relation에도 오이 수가 있다. 답변은 오이의 현재 수를 초기 수로 연결하지 않아 5+3=8을 완성하지 못했다.",
+      "retrieved_evidence": [
+        {
+          "blocks_1_based": [
+            1
+          ],
+          "quote": "I planted 5 tomato plants initially"
+        },
+        {
+          "blocks_1_based": [
+            4
+          ],
+          "quote": "I've got 3 plants that are producing a lot of them!"
+        }
+      ],
+      "missing_support": [],
+      "authoritative_support_session_ids": [
+        "answer_743f03a1_2",
+        "answer_743f03a1_1"
+      ],
+      "interpretation_caveat": "오이 원문은 현재 3개라고 말하며 초기 개수를 명시하지 않는다. benchmark reference는 이 추론을 허용한다; 검색 누락으로 분류하지 않는다."
+    },
+    {
+      "id": "09d032c9",
+      "dataset_index": 145,
+      "split": "held_out",
+      "question_type": "single-session-preference",
+      "question": "I've been having trouble with the battery life on my phone lately. Any tips?",
+      "reference": "The user would prefer responses that build upon their previous mention of purchasing a portable power bank, such as suggestions on how to optimize its use, like ensuring it's fully charged before use. They might also appreciate tips on utilizing battery-saving features on their phone. The user may not prefer responses that suggest alternative solutions or unrelated advice.",
+      "candidate": "I don't have specific information about phone battery life tips from the provided conversation or graph relations.",
+      "classification": "evidence_present_preference_application_failure",
+      "diagnosis": "새 보조배터리를 소유한다는 사용자 발언을 검색했지만, 이를 배터리 사용 조언에 적용하지 않고 답변을 포기했다. 개인화된 조언으로 전환하는 단계의 실패다.",
+      "retrieved_evidence": [
+        {
+          "blocks_1_based": [
+            3
+          ],
+          "quote": "my new portable power bank and wireless charging pad"
+        }
+      ],
+      "missing_support": [],
+      "authoritative_support_session_ids": [
+        "answer_b10dce5e"
+      ],
+      "interpretation_caveat": "대화는 보조배터리 소유를 뒷받침한다. 충전해서 활용하라는 구체적인 조언은 그 정보를 적용해 생성해야 하며, 원문에 동일한 조언 문장이 있을 필요는 없다."
+    },
+    {
+      "id": "gpt4_45189cb4",
+      "dataset_index": 260,
+      "split": "held_out",
+      "question_type": "temporal-reasoning",
+      "question": "What is the order of the sports events I watched in January?",
+      "reference": "First, I attended a NBA game at the Staples Center, then I watched the College Football National Championship game, and finally, I watched the NFL playoffs.",
+      "candidate": "The sports events you watched in January were the NBA game on January 5 and the College Football National Championship on January 14.",
+      "classification": "missing_evidence",
+      "diagnosis": "NBA와 대학 풋볼 두 사건은 검색했지만 NFL 플레이오프 시청 사건이 빠졌다. 세 사건의 전체 순서를 만들 수 없다.",
+      "retrieved_evidence": [
+        {
+          "blocks_1_based": [
+            4
+          ],
+          "quote": "I just went to a NBA game there with my coworkers today"
+        },
+        {
+          "blocks_1_based": [
+            2
+          ],
+          "quote": "College Football National Championship game I watched with my family at home yesterday"
+        }
+      ],
+      "missing_support": [
+        {
+          "source_session_id": "answer_e6c20e52_1",
+          "source_conversation_date": "2023/01/22 (Sun) 12:52",
+          "quote": "watching the Kansas City Chiefs defeat the Buffalo Bills in the Divisional Round of the NFL playoffs last weekend",
+          "absent_marker": "NFL playoffs"
+        }
+      ],
+      "authoritative_support_session_ids": [
+        "answer_e6c20e52_3",
+        "answer_e6c20e52_2",
+        "answer_e6c20e52_1"
+      ]
+    },
+    {
+      "id": "gpt4_e061b84f",
+      "dataset_index": 262,
+      "split": "held_out",
+      "question_type": "temporal-reasoning",
+      "question": "What is the order of the three sports events I participated in during the past month, from earliest to latest?",
+      "reference": "I first completed the Spring Sprint Triathlon, then took part in the Midsummer 5K Run, and finally participated in the company's annual charity soccer tournament.",
+      "candidate": "The conversation does not provide enough information to determine the order of three sports events you participated in during the past month.",
+      "classification": "missing_evidence",
+      "diagnosis": "6월 17일 자선 축구 대회만 검색됐다. 6월 2일 트라이애슬론과 6월 10일 5K 달리기가 빠져 세 사건의 시간순 배열에 실패했다.",
+      "retrieved_evidence": [
+        {
+          "blocks_1_based": [
+            3
+          ],
+          "quote": "I participate in the company's annual charity soccer tournament today"
+        }
+      ],
+      "missing_support": [
+        {
+          "source_session_id": "answer_8c64ce25_2",
+          "source_conversation_date": "2023/06/02 (Fri) 15:29",
+          "quote": "I just completed the Spring Sprint Triathlon today",
+          "absent_marker": "Spring Sprint Triathlon"
+        },
+        {
+          "source_session_id": "answer_8c64ce25_1",
+          "source_conversation_date": "2023/06/10 (Sat) 15:00",
+          "quote": "I just finished a 5K run with a personal best time of 27 minutes and 42 seconds at the Midsummer 5K Run",
+          "absent_marker": "Midsummer 5K Run"
+        }
+      ],
+      "authoritative_support_session_ids": [
+        "answer_8c64ce25_2",
+        "answer_8c64ce25_1",
+        "answer_8c64ce25_3"
+      ]
+    },
+    {
+      "id": "07741c45",
+      "dataset_index": 443,
+      "split": "held_out",
+      "question_type": "knowledge-update",
+      "question": "Where do I currently keep my old sneakers?",
+      "reference": "in a shoe rack in my closet",
+      "candidate": "The user currently keeps their old sneakers under the bed.",
+      "classification": "evidence_present_recency_error",
+      "diagnosis": "5월 25일 침대 밑 보관과 5월 29일 옷장 신발장 언급을 모두 검색했다. 답변은 오래된 침대 밑을 선택했다.",
+      "retrieved_evidence": [
+        {
+          "blocks_1_based": [
+            1
+          ],
+          "quote": "I've been keeping them under my bed for storage"
+        },
+        {
+          "blocks_1_based": [
+            4
+          ],
+          "quote": "get rid of some of my old sneakers in a shoe rack in it, they're currently taking up space."
+        }
+      ],
+      "missing_support": [],
+      "authoritative_support_session_ids": [
+        "answer_7e9ad7b4_1",
+        "answer_7e9ad7b4_2"
+      ],
+      "interpretation_caveat": "5월 29일 같은 세션에 이미 신발장에 있다는 표현과 앞으로 신발장에 보관하겠다는 표현이 공존한다. benchmark는 옷장 신발장을 최신 값으로 채점하며, 원문 표현의 불일치도 난도를 높인다."
+    },
+    {
+      "id": "561fabcd",
+      "dataset_index": 488,
+      "split": "held_out",
+      "question_type": "single-session-assistant",
+      "question": "I was thinking back to our previous conversation about the Radiation Amplified zombie, and I was wondering if you remembered what we finally decided to name it?",
+      "reference": "Fissionator.",
+      "candidate": "The user did not finalize a name for the Radiation Amplified zombie in the conversation. The assistant suggested options like \"Radik,\" \"Irradon,\" and others, but no consensus was reached. The user later introduced their own idea, \"Fissionator,\" for a different concept.",
+      "classification": "mixed_missing_confirmation_and_identity_error",
+      "diagnosis": "Radiation Amplified의 후보명 목록에 Fissionator가 있고 사용자가 같은 이름으로 능력을 이어서 논의한 근거는 검색됐다. 그러나 이름을 명시적으로 선택한 발언은 빠졌고, 답변은 Fissionator를 다른 개념으로 잘못 분리했다.",
+      "retrieved_evidence": [
+        {
+          "blocks_1_based": [
+            1
+          ],
+          "quote": "potential one-word names for the Radiation Amplified:"
+        },
+        {
+          "blocks_1_based": [
+            1
+          ],
+          "quote": "4. Fissionator"
+        },
+        {
+          "blocks_1_based": [
+            1
+          ],
+          "quote": "The Fissionator could have an area-of-effect attack"
+        }
+      ],
+      "missing_support": [
+        {
+          "source_session_id": "answer_sharegpt_hChsWOp_97",
+          "source_conversation_date": "2023/05/30 (Tue) 17:19",
+          "quote": "Fissionator is a REALLY cool one",
+          "absent_marker": "Fissionator is a REALLY cool one"
+        }
+      ],
+      "authoritative_support_session_ids": [
+        "answer_sharegpt_hChsWOp_97"
+      ]
+    }
+  ]
+}

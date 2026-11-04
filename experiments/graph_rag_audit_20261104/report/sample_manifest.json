@@ -1,0 +1,43 @@
+{
+  "seed": 42,
+  "strata": "7 effective question types, 4 random per type",
+  "development": [
+    14,
+    3,
+    127,
+    68,
+    192,
+    200,
+    134,
+    150,
+    236,
+    244,
+    430,
+    369,
+    489,
+    485
+  ],
+  "validation": [
+    35,
+    31,
+    365,
+    67,
+    220,
+    175,
+    145,
+    133,
+    260,
+    262,
+    443,
+    391,
+    488,
+    478
+  ],
+  "regression": [
+    137,
+    27
+  ],
+  "extra_development": [
+    17
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "notebook": "1_Long_Memory.ipynb",
+  "before_cleanup_sha256": "d5b9edcd03eafc273c4c73365843ae9be17e6359267e85b0917fdcc5c2c574b7",
+  "after_cleanup_sha256": "298aff7cee83500dc8c6a1cc6d475d06e8182a58e87847a93ce819793ea0eb41",
+  "frozen_final_candidate_sha256": "bafe1458398c03693b51771764ac2be389b895f16b5a6efa94342c82567a183d",
+  "original_pre_fix_sha256": "e034b4847f28e95bf242b2b25eeb30dc14e0b54a9d4fce211f89d66231595191",
+  "before_cleanup_matches_final_candidate_code": true,
+  "original_to_final_changed_code_cells_zero_based": [
+    31,
+    37
+  ],
+  "cells_before": 42,
+  "cells_after": 35,
+  "removed_comment_only_cells_zero_based": [
+    21,
+    24,
+    28,
+    30,
+    32,
+    33,
+    36
+  ],
+  "retained_cell_mapping": [
+    {
+      "before": 0,
+      "after": 0,
+      "id": "07719ae2"
+    },
+    {
+      "before": 1,
+      "after": 1,
+      "id": "c82728d5"
+    },
+    {
+      "before": 2,
+      "after": 2,
+      "id": "ab1ce8f9"
+    },
+    {
+      "before": 3,
+      "after": 3,
+      "id": "ce505778"
+    },
+    {
+      "before": 4,
+      "after": 4,
+      "id": "24dd1fef"
+    },
+    {
+      "before": 5,
+      "after": 5,
+      "id": "828b7774"
+    },
+    {
+      "before": 6,
+      "after": 6,
+      "id": "1b7f1cc4"
+    },
+    {
+      "before": 7,
+      "after": 7,
+      "id": "947c6515"
+    },
+    {
+      "before": 8,
+      "after": 8,
+      "id": "c0a0db4d"
+    },
+    {
+      "before": 9,
+      "after": 9,
+      "id": "ad8e91df"
+    },
+    {
+      "before": 10,
+      "after": 10,
+      "id": "5dd9a10c"
+    },
+    {
+      "before": 11,
+      "after": 11,
+      "id": "202720a9"
+    },
+    {
+      "before": 12,
+      "after": 12,
+      "id": "cefb51d5"
+    },
+    {
+      "before": 13,
+      "after": 13,
+      "id": "21a3341a"
+    },
+    {
+      "before": 14,
+      "after": 14,
+      "id": "helper-no-memory"
+    },
+    {
+      "before": 15,
+      "after": 15,
+      "id": "c9cac938"
+    },
+    {
+      "before": 16,
+      "after": 16,
+      "id": "44a1c5a9"
+    },
+    {
+      "before": 17,
+      "after": 17,
+      "id": "428b926f"
+    },
+    {
+      "before": 18,
+      "after": 18,
+      "id": "80ba7c82"
+    },
+    {
+      "before": 19,
+      "after": 19,
+      "id": "91037878"
+    },
+    {
+      "before": 20,
+      "after": 20,
+      "id": "fda25adb"
+    },
+    {
+      "before": 22,
+      "after": 21,
+      "id": "dee9427e"
+    },
+    {
+      "before": 23,
+      "after": 22,
+      "id": "3c59b62f"
+    },
+    {
+      "before": 25,
+      "after": 23,
+      "id": "334f980a"
+    },
+    {
+      "before": 26,
+      "after": 24,
+      "id": "3180f9de"
+    },
+    {
+      "before": 27,
+      "after": 25,
+      "id": "924b7c82"
+    },
+    {
+      "before": 29,
+      "after": 26,
+      "id": "50b80e7e"
+    },
+    {
+      "before": 31,
+      "after": 27,
+      "id": "6d623852"
+    },
+    {
+      "before": 34,
+      "after": 28,
+      "id": "366df4ee"
+    },
+    {
+      "before": 35,
+      "after": 29,
+      "id": "80294728"
+    },
+    {
+      "before": 37,
+      "after": 30,
+      "id": "26c3f83a"
+    },
+    {
+      "before": 38,
+      "after": 31,
+      "id": "940d62ed"
+    },
+    {
+      "before": 39,
+      "after": 32,
+      "id": "7d1c0b70"
+    },
+    {
+      "before": 40,
+      "after": 33,
+      "id": "14564cd3"
+    },
+    {
+      "before": 41,
+      "after": 34,
+      "id": "1099b8ff"
+    }
+  ],
+  "checks": {
+    "all_non_import_asts_equal_to_pre_cleanup_and_frozen_final": true,
+    "all_markdown_and_retained_outputs_execution_counts_metadata_unchanged": true,
+    "all_imports_in_first_code_cell": true,
+    "no_duplicate_or_unused_import_bindings": true,
+    "no_korean_code_comments": true,
+    "all_code_cells_compile": true,
+    "notebook_schema_valid": true,
+    "centralized_import_smoke_passed": true,
+    "message_display_tqdm_bindings_verified": true,
+    "readme_local_links_valid": true,
+    "archived_files_byte_identical": 306
+  },
+  "model_inference_run": false,
+  "scope": "Import consolidation, comment-only cell removal, comment cleanup and whitespace/line wrapping. No prompts, active non-import syntax, model settings, samples, results or Markdown changed.",
+  "readme_scope": "Portfolio narrative across all six methods, engineering changes, evidence, limitations and next steps."
+}

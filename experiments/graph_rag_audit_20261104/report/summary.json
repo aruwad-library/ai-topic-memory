@@ -1,0 +1,236 @@
+{
+  "primary_scores": [
+    {
+      "split": "development",
+      "method": "Original Graph RAG",
+      "n": 14,
+      "correct_lower": 9,
+      "correct_upper": 9,
+      "ambiguous": 0,
+      "accuracy_lower_pct": 64.29,
+      "accuracy_upper_pct": 64.29
+    },
+    {
+      "split": "development",
+      "method": "History RAG",
+      "n": 14,
+      "correct_lower": 12,
+      "correct_upper": 12,
+      "ambiguous": 0,
+      "accuracy_lower_pct": 85.71,
+      "accuracy_upper_pct": 85.71
+    },
+    {
+      "split": "development",
+      "method": "Fixed Graph RAG",
+      "n": 14,
+      "correct_lower": 13,
+      "correct_upper": 13,
+      "ambiguous": 0,
+      "accuracy_lower_pct": 92.86,
+      "accuracy_upper_pct": 92.86
+    },
+    {
+      "split": "validation",
+      "method": "Original Graph RAG",
+      "n": 14,
+      "correct_lower": 7,
+      "correct_upper": 8,
+      "ambiguous": 1,
+      "accuracy_lower_pct": 50.0,
+      "accuracy_upper_pct": 57.14
+    },
+    {
+      "split": "validation",
+      "method": "History RAG",
+      "n": 14,
+      "correct_lower": 6,
+      "correct_upper": 6,
+      "ambiguous": 0,
+      "accuracy_lower_pct": 42.86,
+      "accuracy_upper_pct": 42.86
+    },
+    {
+      "split": "validation",
+      "method": "Fixed Graph RAG",
+      "n": 14,
+      "correct_lower": 7,
+      "correct_upper": 7,
+      "ambiguous": 0,
+      "accuracy_lower_pct": 50.0,
+      "accuracy_upper_pct": 50.0
+    },
+    {
+      "split": "overall",
+      "method": "Original Graph RAG",
+      "n": 28,
+      "correct_lower": 16,
+      "correct_upper": 17,
+      "ambiguous": 1,
+      "accuracy_lower_pct": 57.14,
+      "accuracy_upper_pct": 60.71
+    },
+    {
+      "split": "overall",
+      "method": "History RAG",
+      "n": 28,
+      "correct_lower": 18,
+      "correct_upper": 18,
+      "ambiguous": 0,
+      "accuracy_lower_pct": 64.29,
+      "accuracy_upper_pct": 64.29
+    },
+    {
+      "split": "overall",
+      "method": "Fixed Graph RAG",
+      "n": 28,
+      "correct_lower": 20,
+      "correct_upper": 20,
+      "ambiguous": 0,
+      "accuracy_lower_pct": 71.43,
+      "accuracy_upper_pct": 71.43
+    }
+  ],
+  "paired_outcomes": {
+    "development": {
+      "both correct": 11,
+      "Graph only": 2,
+      "History only": 1
+    },
+    "validation": {
+      "both correct": 6,
+      "both incorrect": 7,
+      "Graph only": 1
+    },
+    "overall": {
+      "both correct": 17,
+      "Graph only": 3,
+      "History only": 1,
+      "both incorrect": 7
+    }
+  },
+  "selection": {
+    "seed": 42,
+    "strata": "7 effective question types, 4 random per type",
+    "development": [
+      14,
+      3,
+      127,
+      68,
+      192,
+      200,
+      134,
+      150,
+      236,
+      244,
+      430,
+      369,
+      489,
+      485
+    ],
+    "validation": [
+      35,
+      31,
+      365,
+      67,
+      220,
+      175,
+      145,
+      133,
+      260,
+      262,
+      443,
+      391,
+      488,
+      478
+    ],
+    "regression": [
+      137,
+      27
+    ],
+    "extra_development": [
+      17
+    ]
+  },
+  "final_selection": {
+    "candidate_sha256": "bafe1458398c03693b51771764ac2be389b895f16b5a6efa94342c82567a183d",
+    "frozen_at_utc": "2026-11-04T14:28:31.719934+00:00",
+    "retrieval_variant": "source_fine",
+    "primary_comparison": [
+      "Graph/source_fine/original",
+      "History/original"
+    ],
+    "selection_file": "sample_manifest.json",
+    "validation_not_used_for_tuning": true,
+    "tested_candidate_sha256_before_outer_newline_preservation": "f437a110ba8d995ae607420e0d64aaeb346a77522be42787dd525716ce50f105",
+    "outer_newline": "LF, preserved from original; no cell data change",
+    "previous_candidate_with_prompt_sha256": "0ddc74d92e787e82f3d0aef37f857c4178e002ed9d9d5a093ebcdb622675e950",
+    "final_selection": "Original shared prompt retained based only on the development set: fixed Graph 13/14, original History 12/14. Graph retrieval unchanged from pre-validation freeze.",
+    "final_selected_at_utc": "2026-11-04T14:45:34.102040+00:00"
+  },
+  "notebook": "C:\\Users\\yana\\Desktop\\Library\\AI\\ai-topic\\ai-topic-memory\\1_Long_Memory.ipynb",
+  "changed_code_cells_zero_based": [
+    31,
+    37
+  ],
+  "preserved": [
+    "all Markdown",
+    "all comment tokens",
+    "all outputs and execution counts",
+    "notebook metadata",
+    "original shared system prompt",
+    "all other code cells",
+    "LF line endings"
+  ],
+  "comparison_method": "First generated prediction per question/method. Same qwen3:8b and original shared system prompt. Two independent reviewers saw only type/question/reference/candidate, without method names or automated labels.",
+  "scoring": "LongMemEval-style semantic grading; duration counts accept +/-1 in requested units. Reviewer disagreement or ambiguity is represented as an interval. All primary History/fixed-Graph decisions agree; one original-Graph accessory recommendation is ambiguous.",
+  "generation": {
+    "model": "qwen3:8b",
+    "reasoning": true,
+    "temperature": 0.6,
+    "top_p": 0.95,
+    "top_k": 20,
+    "num_ctx": 32768,
+    "num_predict": 2048,
+    "seed": 42
+  },
+  "graph_extraction": {
+    "model": "qwen3:4b-instruct",
+    "temperature": 0,
+    "thinking": false,
+    "context_window": 32768,
+    "max_paths_per_chunk": 10,
+    "num_workers": 1
+  },
+  "data": {
+    "repository": "xiaowu0162/longmemeval-cleaned",
+    "file": "longmemeval_s_cleaned.json",
+    "n": 500,
+    "sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442"
+  },
+  "confirmed_fixes": [
+    "Recover evidence discarded by the per-source two-excerpt limit using a global evidence budget.",
+    "Retrieve source evidence independently of lossy graph relations, including fine-grained BM25 on dated speaker excerpts.",
+    "Recover actual inherited speaker/date from preceding chunks.",
+    "Restore real batched embeddings with synchronous LangchainEmbedding calls.",
+    "Remove forced JSON Schema from the local judge; request JSON and strictly validate it; stop evaluation when native judge controls fail."
+  ],
+  "validation_checks": {
+    "native_judge_controls": "6/6 on two consecutive runs",
+    "additional_synthetic_judge_controls": "24/24",
+    "header_recovery": "346/346 compared against original sessions",
+    "static_and_edge_checks": "passed; see copied check files",
+    "original_vs_batched_embedding_max_abs_difference": 1.49e-07
+  },
+  "limits": [
+    "Only 28 balanced development/validation questions were fully compared; this is not a full 500-question official score.",
+    "Retrieval context budgets differ between methods; this is a pipeline comparison, not an equal-token experiment.",
+    "Prebuilt graph indexes and retrieved evidence were reused to isolate retrieval/prompt effects. Concurrent runs and cache reuse make wall-clock columns unsuitable for overall speedup claims.",
+    "The local 8B judge still makes semantic errors. Reported primary scores use independent method-blind reviews.",
+    "Three missing-evidence failures, four evidence-present interpretation failures, and one mixed failure remain in the fixed Graph results."
+  ],
+  "benchmark_sources": [
+    "https://github.com/xiaowu0162/LongMemEval",
+    "https://raw.githubusercontent.com/xiaowu0162/LongMemEval/main/src/evaluation/evaluate_qa.py"
+  ]
+}

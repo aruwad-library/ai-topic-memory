@@ -1,0 +1,1085 @@
+{
+  "dataset_path": "C:\\Users\\yana\\.cache\\huggingface\\hub\\datasets--xiaowu0162--longmemeval-cleaned\\snapshots\\98d7416c24c778c2fee6e6f3006e7a073259d48f\\longmemeval_s_cleaned.json",
+  "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "n": 500,
+  "question_types": {
+    "single-session-user": 70,
+    "multi-session": 133,
+    "single-session-preference": 30,
+    "temporal-reasoning": 133,
+    "knowledge-update": 78,
+    "single-session-assistant": 56
+  },
+  "effective_types": {
+    "single-session-user": 64,
+    "abstention": 30,
+    "multi-session": 121,
+    "single-session-preference": 30,
+    "temporal-reasoning": 127,
+    "knowledge-update": 72,
+    "single-session-assistant": 56
+  },
+  "sessions": {
+    "min": 38,
+    "median": 48.0,
+    "mean": 47.734,
+    "max": 62
+  },
+  "checks": {
+    "parallel_length_mismatch": {
+      "count": 0,
+      "examples": []
+    },
+    "duplicate_session_ids": {
+      "count": 13,
+      "examples": [
+        "58bf7951",
+        "1e043500",
+        "001be529",
+        "d23cf73b",
+        "caf03d32"
+      ]
+    },
+    "duplicate_answer_ids": {
+      "count": 0,
+      "examples": []
+    },
+    "missing_answer_ids_answerable": {
+      "count": 0,
+      "examples": []
+    },
+    "missing_answer_ids_abstention": {
+      "count": 0,
+      "examples": []
+    },
+    "unsorted_sessions": {
+      "count": 211,
+      "examples": [
+        "gpt4_59149c77",
+        "gpt4_f49edff3",
+        "71017276",
+        "b46e15ed",
+        "gpt4_fa19884c"
+      ]
+    },
+    "sessions_after_question": {
+      "count": 76,
+      "examples": [
+        {
+          "id": "gpt4_2655b836",
+          "sessions": [
+            "ultrachat_410532",
+            "e3e66b50",
+            "sharegpt_rcgl3wR_23",
+            "ultrachat_455404",
+            "ultrachat_247781",
+            "answer_4be1b6b4_1",
+            "answer_4be1b6b4_2",
+            "ultrachat_66306",
+            "92509977_1",
+            "ultrachat_316977",
+            "sharegpt_q0EjMj1_0",
+            "sharegpt_hcxQhJj_0",
+            "c85869d4_2",
+            "4acdd888",
+            "f220dd04_1",
+            "b876911c",
+            "edc3bd1b",
+            "e6120ff9_2",
+            "ultrachat_413598",
+            "9e05d9a0",
+            "d82cefd3",
+            "ultrachat_107032",
+            "sharegpt_Tv9eXvf_0"
+          ]
+        },
+        {
+          "id": "gpt4_2487a7cb",
+          "sessions": [
+            "07b94dbf_1",
+            "ultrachat_323766",
+            "sharegpt_xp3Y23H_0",
+            "ultrachat_110739",
+            "sharegpt_QN26oUg_0",
+            "sharegpt_UxqsGTv_40",
+            "67a8ef5f",
+            "f95f6539",
+            "sharegpt_CHaU4ax_10",
+            "sharegpt_7Iyj4aa_9",
+            "b18cbb8b_1",
+            "3e8d9847",
+            "sharegpt_Sq28pDc_0",
+            "ultrachat_347414",
+            "08582b18_1",
+            "f87fea58_4",
+            "3afa6478",
+            "3e99800c",
+            "3c0ed3bf_3",
+            "15d8b869_3",
+            "15c03056_1",
+            "sharegpt_AOlktMk_61",
+            "3dfb6449",
+            "4c1982d8_2",
+            "4f5880c6_6",
+            "sharegpt_ETJwE0s_0",
+            "034ce94a_1",
+            "answer_1c6b85ea_1",
+            "sharegpt_EJC4YOh_0",
+            "788da930_3",
+            "27d9e492_2",
+            "5a663e80",
+            "b10c041b_2"
+          ]
+        },
+        {
+          "id": "gpt4_76048e76",
+          "sessions": [
+            "de586cea",
+            "ultrachat_83364",
+            "ultrachat_325686",
+            "ultrachat_166366",
+            "889d3eef_1",
+            "390acb55_4",
+            "8fcaf3a9_2",
+            "a4d6c239_2",
+            "f0e71553_6",
+            "29d939de",
+            "sharegpt_vx14orQ_11",
+            "ultrachat_530289",
+            "answer_b535969f_1",
+            "8fcaf3a9_2",
+            "answer_b535969f_2",
+            "ultrachat_521187",
+            "e2d9bcfe",
+            "sharegpt_JprREQx_0",
+            "5a0d28f8_3",
+            "sharegpt_inuIr9J_119",
+            "33a39aa7_2",
+            "1cb7a6c4_2",
+            "sharegpt_zcVvENA_0",
+            "sharegpt_JD4rWyC_29",
+            "ultrachat_130770",
+            "ultrachat_289307",
+            "10889cf0_2",
+            "33630c9e_2",
+            "f2b3584e_4",
+            "ultrachat_185750",
+            "ultrachat_22377",
+            "409dfa26_1"
+          ]
+        },
+        {
+          "id": "gpt4_2312f94c",
+          "sessions": [
+            "92f6d5f3",
+            "ultrachat_364762",
+            "26e99766_1",
+            "e2608cbd_1",
+            "answer_5328c3c2_2",
+            "sharegpt_FfqJ2xI_0",
+            "a1c1739c_3",
+            "ultrachat_77559",
+            "sharegpt_Aeo2AOL_0",
+            "3bbf4800_1",
+            "0b8a4a9d_2",
+            "fff1b23b",
+            "ultrachat_44021",
+            "b9f59a03_2",
+            "answer_5328c3c2_1",
+            "481d72d4",
+            "f34bf5e1",
+            "a764b677_2",
+            "sharegpt_uVeeJj8_0",
+            "3db86aab_1",
+            "85a49fe0_2",
+            "sharegpt_jE25Ibo_0",
+            "00ebfcf5",
+            "e831a29f_2",
+            "869fe9ba_2",
+            "sharegpt_PfLDGRu_0",
+            "sharegpt_T1zNKId_0",
+            "ultrachat_478858",
+            "ultrachat_24781",
+            "sharegpt_IYX2zQn_37",
+            "ultrachat_51520",
+            "e82ce7cd_2",
+            "93f2334f_1",
+            "sharegpt_XYtuANl_9"
+          ]
+        },
+        {
+          "id": "0bb5a684",
+          "sessions": [
+            "ultrachat_218081",
+            "c4e5d969_1",
+            "sharegpt_CcgnSUX_5",
+            "sharegpt_zuIDBpz_0",
+            "sharegpt_d3UV0eu_0",
+            "3c8e7c0e_3",
+            "b10d0907_2",
+            "sharegpt_9iUZNsL_0",
+            "ultrachat_112203",
+            "ultrachat_472501",
+            "answer_e936197f_2",
+            "73ba8380_5",
+            "sharegpt_6dPUCcK_13",
+            "1a14d6cb_1",
+            "e153da76",
+            "sharegpt_G4vV1Tn_21",
+            "sharegpt_6pxy48o_21",
+            "sharegpt_inuIr9J_19",
+            "sharegpt_m2FmQoN_9",
+            "ultrachat_116758",
+            "d794dec9_2"
+          ]
+        }
+      ]
+    },
+    "date_weekday_or_format_mismatch": {
+      "count": 0,
+      "examples": []
+    },
+    "invalid_dates": {
+      "count": 0,
+      "examples": []
+    },
+    "empty_session": {
+      "count": 0,
+      "examples": []
+    },
+    "unexpected_role": {
+      "count": 0,
+      "examples": []
+    },
+    "empty_or_nonstring_content": {
+      "count": 12,
+      "examples": [
+        {
+          "id": "dd2973ad",
+          "session": "sharegpt_ADHo6Ob_0",
+          "turn": 8
+        },
+        {
+          "id": "gpt4_7fce9456",
+          "session": "sharegpt_348azga_0",
+          "turn": 3
+        },
+        {
+          "id": "gpt4_7fce9456",
+          "session": "sharegpt_348azga_0",
+          "turn": 4
+        },
+        {
+          "id": "gpt4_7fce9456",
+          "session": "sharegpt_348azga_0",
+          "turn": 7
+        },
+        {
+          "id": "gpt4_7fce9456",
+          "session": "sharegpt_348azga_0",
+          "turn": 8
+        }
+      ]
+    },
+    "nonboolean_has_answer": {
+      "count": 0,
+      "examples": []
+    },
+    "unmarked_answer_session_answerable": {
+      "count": 45,
+      "examples": [
+        {
+          "id": "b5ef892d",
+          "session": "answer_a8b4290f_3"
+        },
+        {
+          "id": "3a704032",
+          "session": "answer_c2204106_3"
+        },
+        {
+          "id": "80ec1f4f",
+          "session": "answer_990c8992_3"
+        },
+        {
+          "id": "7024f17c",
+          "session": "answer_a21f3697_3"
+        },
+        {
+          "id": "00ca467f",
+          "session": "answer_39900a0a_2"
+        }
+      ]
+    },
+    "unmarked_answer_session_abstention": {
+      "count": 49,
+      "examples": [
+        {
+          "id": "0862e8bf_abs",
+          "session": "answer_c6fd8ebd_abs"
+        },
+        {
+          "id": "15745da0_abs",
+          "session": "answer_586de428_abs"
+        },
+        {
+          "id": "bc8a6e93_abs",
+          "session": "answer_e6143162_abs"
+        },
+        {
+          "id": "19b5f2b3_abs",
+          "session": "answer_5ff494b9_abs"
+        },
+        {
+          "id": "29f2956b_abs",
+          "session": "answer_7cc5362f_abs"
+        }
+      ]
+    },
+    "marked_outside_answer_session_answerable": {
+      "count": 0,
+      "examples": []
+    },
+    "marked_outside_answer_session_abstention": {
+      "count": 0,
+      "examples": []
+    },
+    "duplicate_question_ids": {
+      "count": 0,
+      "examples": []
+    }
+  },
+  "per_effective_type": {
+    "single-session-user": {
+      "n": 64,
+      "answer_session_count_distribution": {
+        "1": 64
+      },
+      "marked_turns": {
+        "min": 1,
+        "median": 1.0,
+        "mean": 1.031,
+        "max": 2
+      }
+    },
+    "abstention": {
+      "n": 30,
+      "answer_session_count_distribution": {
+        "1": 6,
+        "2": 21,
+        "3": 2,
+        "4": 1
+      },
+      "marked_turns": {
+        "min": 0,
+        "median": 0.0,
+        "mean": 0.333,
+        "max": 2
+      }
+    },
+    "multi-session": {
+      "n": 121,
+      "answer_session_count_distribution": {
+        "2": 75,
+        "3": 24,
+        "4": 16,
+        "5": 6
+      },
+      "marked_turns": {
+        "min": 2,
+        "median": 2,
+        "mean": 2.669,
+        "max": 6
+      }
+    },
+    "single-session-preference": {
+      "n": 30,
+      "answer_session_count_distribution": {
+        "1": 30
+      },
+      "marked_turns": {
+        "min": 1,
+        "median": 1.0,
+        "mean": 1.467,
+        "max": 3
+      }
+    },
+    "temporal-reasoning": {
+      "n": 127,
+      "answer_session_count_distribution": {
+        "1": 20,
+        "2": 82,
+        "3": 15,
+        "4": 2,
+        "5": 5,
+        "6": 3
+      },
+      "marked_turns": {
+        "min": 1,
+        "median": 2,
+        "mean": 1.992,
+        "max": 6
+      }
+    },
+    "knowledge-update": {
+      "n": 72,
+      "answer_session_count_distribution": {
+        "2": 72
+      },
+      "marked_turns": {
+        "min": 1,
+        "median": 2.0,
+        "mean": 2,
+        "max": 3
+      }
+    },
+    "single-session-assistant": {
+      "n": 56,
+      "answer_session_count_distribution": {
+        "1": 56
+      },
+      "marked_turns": {
+        "min": 1,
+        "median": 1.0,
+        "mean": 1,
+        "max": 1
+      }
+    }
+  },
+  "split": {
+    "development": {
+      "n": 14,
+      "type_counts": {
+        "single-session-user": 2,
+        "abstention": 2,
+        "multi-session": 2,
+        "single-session-preference": 2,
+        "temporal-reasoning": 2,
+        "knowledge-update": 2,
+        "single-session-assistant": 2
+      },
+      "rows": [
+        {
+          "index": 14,
+          "id": "726462e0",
+          "type": "single-session-user",
+          "question": "What was the discount I got on my first purchase from the new clothing brand?",
+          "sessions": 48,
+          "answer_sessions": 1
+        },
+        {
+          "index": 3,
+          "id": "58bf7951",
+          "type": "single-session-user",
+          "question": "What play did I attend at the local community theater?",
+          "sessions": 57,
+          "answer_sessions": 1
+        },
+        {
+          "index": 127,
+          "id": "80ec1f4f_abs",
+          "type": "abstention",
+          "question": "How many different museums or galleries did I visit in December?",
+          "sessions": 44,
+          "answer_sessions": 3
+        },
+        {
+          "index": 68,
+          "id": "29f2956b_abs",
+          "type": "abstention",
+          "question": "How much time do I dedicate to practicing violin every day?",
+          "sessions": 50,
+          "answer_sessions": 1
+        },
+        {
+          "index": 192,
+          "id": "8979f9ec",
+          "type": "multi-session",
+          "question": "What is the total number of lunch meals I got from the chicken fajitas and lentil soup?",
+          "sessions": 43,
+          "answer_sessions": 2
+        },
+        {
+          "index": 200,
+          "id": "0ea62687",
+          "type": "multi-session",
+          "question": "How much more miles per gallon was my car getting a few months ago compared to now?",
+          "sessions": 43,
+          "answer_sessions": 2
+        },
+        {
+          "index": 134,
+          "id": "75832dbd",
+          "type": "single-session-preference",
+          "question": "Can you recommend some recent publications or conferences that I might find interesting?",
+          "sessions": 48,
+          "answer_sessions": 1
+        },
+        {
+          "index": 150,
+          "id": "505af2f5",
+          "type": "single-session-preference",
+          "question": "I was thinking of trying a new coffee creamer recipe. Any recommendations?",
+          "sessions": 53,
+          "answer_sessions": 1
+        },
+        {
+          "index": 236,
+          "id": "b46e15ed",
+          "type": "temporal-reasoning",
+          "question": "How many months have passed since I participated in two charity events in a row, on consecutive days?",
+          "sessions": 46,
+          "answer_sessions": 4
+        },
+        {
+          "index": 244,
+          "id": "gpt4_e072b769",
+          "type": "temporal-reasoning",
+          "question": "How many weeks ago did I start using the cashback app 'Ibotta'?",
+          "sessions": 45,
+          "answer_sessions": 1
+        },
+        {
+          "index": 430,
+          "id": "ba61f0b9",
+          "type": "knowledge-update",
+          "question": "How many women are on the team led by my former manager Rachel?",
+          "sessions": 45,
+          "answer_sessions": 2
+        },
+        {
+          "index": 369,
+          "id": "852ce960",
+          "type": "knowledge-update",
+          "question": "What was the amount I was pre-approved for when I got my mortgage from Wells Fargo?",
+          "sessions": 39,
+          "answer_sessions": 2
+        },
+        {
+          "index": 489,
+          "id": "b759caee",
+          "type": "single-session-assistant",
+          "question": "I was looking back at our previous conversation about buying unique engagement rings directly from designers. Can you remind me of the Instagram handle of the UK-based designer who works with unusual gemstones?",
+          "sessions": 53,
+          "answer_sessions": 1
+        },
+        {
+          "index": 485,
+          "id": "41275add",
+          "type": "single-session-assistant",
+          "question": "I wanted to follow up on our previous conversation about YouTube videos for workplace posture. Can you remind me of the Mayo Clinic video you recommended?",
+          "sessions": 53,
+          "answer_sessions": 1
+        }
+      ]
+    },
+    "validation": {
+      "n": 14,
+      "type_counts": {
+        "single-session-user": 2,
+        "abstention": 2,
+        "multi-session": 2,
+        "single-session-preference": 2,
+        "temporal-reasoning": 2,
+        "knowledge-update": 2,
+        "single-session-assistant": 2
+      },
+      "rows": [
+        {
+          "index": 35,
+          "id": "60d45044",
+          "type": "single-session-user",
+          "question": "What type of rice is my favorite?",
+          "sessions": 51,
+          "answer_sessions": 1
+        },
+        {
+          "index": 31,
+          "id": "d52b4f67",
+          "type": "single-session-user",
+          "question": "Where did I attend my cousin's wedding?",
+          "sessions": 52,
+          "answer_sessions": 1
+        },
+        {
+          "index": 365,
+          "id": "gpt4_fe651585_abs",
+          "type": "abstention",
+          "question": "Who became a parent first, Tom or Alex?",
+          "sessions": 49,
+          "answer_sessions": 2
+        },
+        {
+          "index": 67,
+          "id": "19b5f2b3_abs",
+          "type": "abstention",
+          "question": "How long was I in Korea for?",
+          "sessions": 50,
+          "answer_sessions": 1
+        },
+        {
+          "index": 220,
+          "id": "a346bb18",
+          "type": "multi-session",
+          "question": "How many minutes did I exceed my target time by in the marathon?",
+          "sessions": 49,
+          "answer_sessions": 2
+        },
+        {
+          "index": 175,
+          "id": "6456829e",
+          "type": "multi-session",
+          "question": "How many plants did I initially plant for tomatoes and cucumbers?",
+          "sessions": 47,
+          "answer_sessions": 2
+        },
+        {
+          "index": 145,
+          "id": "09d032c9",
+          "type": "single-session-preference",
+          "question": "I've been having trouble with the battery life on my phone lately. Any tips?",
+          "sessions": 43,
+          "answer_sessions": 1
+        },
+        {
+          "index": 133,
+          "id": "06878be2",
+          "type": "single-session-preference",
+          "question": "Can you suggest some accessories that would complement my current photography setup?",
+          "sessions": 48,
+          "answer_sessions": 1
+        },
+        {
+          "index": 260,
+          "id": "gpt4_45189cb4",
+          "type": "temporal-reasoning",
+          "question": "What is the order of the sports events I watched in January?",
+          "sessions": 45,
+          "answer_sessions": 3
+        },
+        {
+          "index": 262,
+          "id": "gpt4_e061b84f",
+          "type": "temporal-reasoning",
+          "question": "What is the order of the three sports events I participated in during the past month, from earliest to latest?",
+          "sessions": 46,
+          "answer_sessions": 3
+        },
+        {
+          "index": 443,
+          "id": "07741c45",
+          "type": "knowledge-update",
+          "question": "Where do I currently keep my old sneakers?",
+          "sessions": 49,
+          "answer_sessions": 2
+        },
+        {
+          "index": 391,
+          "id": "618f13b2",
+          "type": "knowledge-update",
+          "question": "How many times have I worn my new black Converse Chuck Taylor All Star sneakers?",
+          "sessions": 49,
+          "answer_sessions": 2
+        },
+        {
+          "index": 488,
+          "id": "561fabcd",
+          "type": "single-session-assistant",
+          "question": "I was thinking back to our previous conversation about the Radiation Amplified zombie, and I was wondering if you remembered what we finally decided to name it?",
+          "sessions": 49,
+          "answer_sessions": 1
+        },
+        {
+          "index": 478,
+          "id": "e982271f",
+          "type": "single-session-assistant",
+          "question": "I was going through our previous chat. Can you remind me of the name of the last venue you recommended in the list of popular venues in Portland for indie music shows?",
+          "sessions": 54,
+          "answer_sessions": 1
+        }
+      ]
+    },
+    "regression": {
+      "n": 2,
+      "type_counts": {
+        "single-session-preference": 1,
+        "single-session-user": 1
+      },
+      "rows": [
+        {
+          "index": 137,
+          "id": "32260d93",
+          "type": "single-session-preference",
+          "question": "Can you recommend a show or movie for me to watch tonight?",
+          "sessions": 46,
+          "answer_sessions": 1
+        },
+        {
+          "index": 27,
+          "id": "853b0a1d",
+          "type": "single-session-user",
+          "question": "How old was I when my grandma gave me the silver necklace?",
+          "sessions": 52,
+          "answer_sessions": 1
+        }
+      ]
+    },
+    "extra_development": {
+      "n": 1,
+      "type_counts": {
+        "single-session-user": 1
+      },
+      "rows": [
+        {
+          "index": 17,
+          "id": "ad7109d1",
+          "type": "single-session-user",
+          "question": "What speed is my new internet plan?",
+          "sessions": 44,
+          "answer_sessions": 1
+        }
+      ]
+    },
+    "development_validation_disjoint": true,
+    "regression_validation_disjoint": true,
+    "extra_development_validation_disjoint": true,
+    "reproduced_from_seed_and_type_only": {
+      "effective_type_order": [
+        "single-session-user",
+        "abstention",
+        "multi-session",
+        "single-session-preference",
+        "temporal-reasoning",
+        "knowledge-update",
+        "single-session-assistant"
+      ],
+      "development_matches": true,
+      "validation_matches": true,
+      "computed_development": [
+        14,
+        3,
+        127,
+        68,
+        192,
+        200,
+        134,
+        150,
+        236,
+        244,
+        430,
+        369,
+        489,
+        485
+      ],
+      "computed_validation": [
+        35,
+        31,
+        365,
+        67,
+        220,
+        175,
+        145,
+        133,
+        260,
+        262,
+        443,
+        391,
+        488,
+        478
+      ]
+    }
+  },
+  "methodology": {
+    "proposed_answer_prompt": {
+      "legitimate": true,
+      "reason": "Combine all relevant evidence and apply user preferences describe general requested behavior. They use neither gold answers, gold evidence labels, sample IDs, nor question types. Apply the same answer prompt to both methods.",
+      "limitation": "Tuning on development cases is permissible internal development; only untouched validation supports generalization. The two existing regression cases cannot serve as holdout."
+    },
+    "judge_differences": {
+      "official_model_example": "gpt-4o-2024-08-06",
+      "official_temperature": 0,
+      "local_model": "qwen3:8b",
+      "local_notebook_temperature": 0.6,
+      "local_rubric_extra_permissive_clause": "If the candidate can be reasonably estimated to know the reference, mark true.",
+      "risk": "This may accept incomplete or contradicted answers despite other prompt constraints. Official multi-session requires all required information; local results should be described as proxy judgments.",
+      "preference": "Official rule accepts correct utilization of some personal information; it does not require every preference detail.",
+      "temporal": "Official numeric duration off-by-one is accepted; this does not imply tolerance for calendar dates.",
+      "knowledge_update": "An explicitly past value is allowed if the required updated answer is correct.",
+      "abstention": "Official rule tests correct identification of unanswerability. Local no-definite-guess requirement is compatible."
+    },
+    "official_sources": [
+      "https://github.com/xiaowu0162/LongMemEval",
+      "https://raw.githubusercontent.com/xiaowu0162/LongMemEval/main/src/evaluation/evaluate_qa.py"
+    ]
+  },
+  "data_caveats": {
+    "future_gold_samples": {
+      "n": 44,
+      "types": {
+        "temporal-reasoning": 43,
+        "knowledge-update": 1
+      },
+      "examples": [
+        {
+          "index": 306,
+          "id": "gpt4_2655b836",
+          "type": "temporal-reasoning",
+          "question_date": "2023/04/10 (Mon) 10:15",
+          "future_gold": [
+            {
+              "session": "answer_4be1b6b4_1",
+              "date": "2023/04/10 (Mon) 10:57",
+              "marked_turns": 0
+            },
+            {
+              "session": "answer_4be1b6b4_2",
+              "date": "2023/04/10 (Mon) 20:30",
+              "marked_turns": 1
+            }
+          ]
+        },
+        {
+          "index": 307,
+          "id": "gpt4_2487a7cb",
+          "type": "temporal-reasoning",
+          "question_date": "2023/05/24 (Wed) 08:02",
+          "future_gold": [
+            {
+              "session": "answer_1c6b85ea_1",
+              "date": "2023/05/24 (Wed) 16:55",
+              "marked_turns": 1
+            }
+          ]
+        },
+        {
+          "index": 308,
+          "id": "gpt4_76048e76",
+          "type": "temporal-reasoning",
+          "question_date": "2023/03/10 (Fri) 03:39",
+          "future_gold": [
+            {
+              "session": "answer_b535969f_1",
+              "date": "2023/03/10 (Fri) 23:04",
+              "marked_turns": 1
+            },
+            {
+              "session": "answer_b535969f_2",
+              "date": "2023/03/10 (Fri) 07:55",
+              "marked_turns": 1
+            }
+          ]
+        }
+      ]
+    },
+    "unmarked_gold_answerable_samples": {
+      "n": 32,
+      "sessions": 45,
+      "types": {
+        "multi-session": 10,
+        "temporal-reasoning": 20,
+        "knowledge-update": 2
+      },
+      "examples": [
+        {
+          "index": 73,
+          "id": "b5ef892d",
+          "type": "multi-session",
+          "sessions": [
+            "answer_a8b4290f_3"
+          ]
+        },
+        {
+          "index": 75,
+          "id": "3a704032",
+          "type": "multi-session",
+          "sessions": [
+            "answer_c2204106_3"
+          ]
+        },
+        {
+          "index": 90,
+          "id": "80ec1f4f",
+          "type": "multi-session",
+          "sessions": [
+            "answer_990c8992_3"
+          ]
+        }
+      ]
+    },
+    "duplicate_ids": {
+      "n": 13,
+      "identical_content": 13,
+      "gold_ids": 0,
+      "examples": [
+        {
+          "index": 3,
+          "id": "58bf7951",
+          "session": "07b7a667_1",
+          "copies": 2,
+          "content_identical": true,
+          "dates": [
+            "2023/05/23 (Tue) 23:54",
+            "2023/05/29 (Mon) 13:56"
+          ],
+          "is_gold": false
+        },
+        {
+          "index": 4,
+          "id": "1e043500",
+          "session": "d5d1f9c4",
+          "copies": 2,
+          "content_identical": true,
+          "dates": [
+            "2023/05/21 (Sun) 11:42",
+            "2023/05/24 (Wed) 06:24"
+          ],
+          "is_gold": false
+        },
+        {
+          "index": 44,
+          "id": "001be529",
+          "session": "sharegpt_SYbLHTK_0",
+          "copies": 2,
+          "content_identical": true,
+          "dates": [
+            "2023/05/25 (Thu) 12:40",
+            "2023/05/30 (Tue) 04:52"
+          ],
+          "is_gold": false
+        }
+      ]
+    },
+    "selected_sample_anomalies": [
+      {
+        "index": 3,
+        "id": "58bf7951",
+        "type": "single-session-user",
+        "unsorted": false,
+        "future_gold": 0,
+        "unmarked_gold": 0,
+        "duplicate_ids": true
+      },
+      {
+        "index": 67,
+        "id": "19b5f2b3_abs",
+        "type": "single-session-user",
+        "unsorted": false,
+        "future_gold": 0,
+        "unmarked_gold": 1,
+        "duplicate_ids": false
+      },
+      {
+        "index": 68,
+        "id": "29f2956b_abs",
+        "type": "single-session-user",
+        "unsorted": false,
+        "future_gold": 0,
+        "unmarked_gold": 1,
+        "duplicate_ids": false
+      },
+      {
+        "index": 127,
+        "id": "80ec1f4f_abs",
+        "type": "multi-session",
+        "unsorted": false,
+        "future_gold": 0,
+        "unmarked_gold": 3,
+        "duplicate_ids": false
+      },
+      {
+        "index": 236,
+        "id": "b46e15ed",
+        "type": "temporal-reasoning",
+        "unsorted": true,
+        "future_gold": 0,
+        "unmarked_gold": 0,
+        "duplicate_ids": false
+      },
+      {
+        "index": 244,
+        "id": "gpt4_e072b769",
+        "type": "temporal-reasoning",
+        "unsorted": true,
+        "future_gold": 0,
+        "unmarked_gold": 0,
+        "duplicate_ids": false
+      },
+      {
+        "index": 260,
+        "id": "gpt4_45189cb4",
+        "type": "temporal-reasoning",
+        "unsorted": true,
+        "future_gold": 0,
+        "unmarked_gold": 0,
+        "duplicate_ids": false
+      },
+      {
+        "index": 262,
+        "id": "gpt4_e061b84f",
+        "type": "temporal-reasoning",
+        "unsorted": true,
+        "future_gold": 0,
+        "unmarked_gold": 0,
+        "duplicate_ids": false
+      },
+      {
+        "index": 365,
+        "id": "gpt4_fe651585_abs",
+        "type": "temporal-reasoning",
+        "unsorted": true,
+        "future_gold": 2,
+        "unmarked_gold": 1,
+        "duplicate_ids": false
+      },
+      {
+        "index": 369,
+        "id": "852ce960",
+        "type": "knowledge-update",
+        "unsorted": true,
+        "future_gold": 0,
+        "unmarked_gold": 0,
+        "duplicate_ids": false
+      },
+      {
+        "index": 391,
+        "id": "618f13b2",
+        "type": "knowledge-update",
+        "unsorted": true,
+        "future_gold": 0,
+        "unmarked_gold": 0,
+        "duplicate_ids": false
+      },
+      {
+        "index": 430,
+        "id": "ba61f0b9",
+        "type": "knowledge-update",
+        "unsorted": true,
+        "future_gold": 0,
+        "unmarked_gold": 0,
+        "duplicate_ids": false
+      },
+      {
+        "index": 443,
+        "id": "07741c45",
+        "type": "knowledge-update",
+        "unsorted": true,
+        "future_gold": 0,
+        "unmarked_gold": 0,
+        "duplicate_ids": false
+      }
+    ],
+    "interpretation": [
+      "Do not assume list order is chronological; compare explicit timestamps when answering temporal/update questions.",
+      "Do not filter sessions after question_date: official source data includes future-dated gold sessions.",
+      "has_answer does not mark every answer_session_ids session; absent turn annotation alone does not prove source recall failure.",
+      "These structural observations do not establish that the reference answer is wrong; inspect text for a specific failure.",
+      "Abstention evidence session IDs may refer to related information while the requested answer remains absent."
+    ],
+    "future_time_details": {
+      "future_sessions": 1475,
+      "all_same_calendar_day": true,
+      "max_hours": 23.683333333333334,
+      "answerable_samples_with_future_gold": 41,
+      "abstention_samples_with_future_related_session": 3
+    }
+  }
+}

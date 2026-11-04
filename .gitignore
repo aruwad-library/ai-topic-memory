@@ -11,3 +11,6 @@
 # Custom
 tmp/
 data/
+
+# Final validation reports
+!experiments/graph_rag_audit_20261104/report/*.json

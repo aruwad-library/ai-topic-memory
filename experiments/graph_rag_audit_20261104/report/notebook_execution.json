@@ -1,0 +1,29 @@
+{
+  "started_at_utc": "2026-11-04T15:37:55.786643+00:00",
+  "finished_at_utc": "2026-11-04T15:43:21.355128+00:00",
+  "elapsed_seconds": 325.568,
+  "fresh_kernel": true,
+  "executed_code_cells": 15,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "errors": 0,
+  "all_cell_sources_unchanged": true,
+  "before_sha256": "298aff7cee83500dc8c6a1cc6d475d06e8182a58e87847a93ce819793ea0eb41",
+  "saved_sha256": "9f6ef6c0c4b52095b29e334f8a2a445e69020cf3aee1429302bbbd1567bc87b0",
+  "scope": "All cells, including the existing two-question Graph RAG evaluation; not the archived 28-question comparison."
+}
