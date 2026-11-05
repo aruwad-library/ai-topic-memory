@@ -69,4 +69,4 @@ Start with [1_Long_Memory.ipynb](1_Long_Memory.ipynb), using the local Ollama mo
 See the [final comparison](experiments/graph_rag_audit_20261104/report/comparison.csv), [validation summary](experiments/graph_rag_audit_20261104/report/summary.json), and [failure diagnosis](experiments/graph_rag_audit_20261104/report/failure_diagnosis.json). The [reproduction guide](experiments/README.md) provides a fresh-kernel notebook runner and an optional 28-question runner, both using the current notebook's unchanged logic. Final reports are retained; exploratory variants, duplicate snapshots, and graph caches are excluded from the repository. Historical notebook hashes identify the evaluated implementation before documentation and cleanup.
 
 
-> Note) This `README.md` was written with the support of generative LLM.
+## Note) This `README.md` was written with the support of generative LLM.
