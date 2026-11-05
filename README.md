@@ -1,4 +1,4 @@
-# Designing Long-Term Memory for Conversational Agents
+# Designing Long-Term Memory for Agents
 
 How should an agent retain useful information when conversation history exceeds its context window? This project implements six memory strategies and examines their tradeoffs in information preservation, retrieval, representation, and computational cost. The goal is to connect implementation failures to practical memory design decisions.
 
