@@ -34,7 +34,7 @@ The answer model remains `qwen3:8b`; relation extraction uses `qwen3:4b-instruct
 
 ## Evaluation
 
-The structural audit covered all **500 LongMemEval-S-cleaned examples**. Sessions were not always chronological, turn-level `has_answer` flags missed some gold sessions, and some same-day evidence followed the question's clock time. These findings ruled out blindly filtering history by annotations or a strict timestamp cutoff. Reference answers and question types were used for evaluation, not retrieval or answer generation.
+Sessions were not always chronological, turn-level `has_answer` flags missed some gold sessions, and some same-day evidence followed the question's clock time. These findings ruled out blindly filtering history by annotations or a strict timestamp cutoff. Reference answers and question types were used for evaluation, not retrieval or answer generation.
 
 Accuracy comparison used **28 examples**, balanced across seven effective types including abstention: 14 for development and 14 for separate validation, selected with seed 42. Two independent model reviews, blinded to method names, agreed on all primary judgments.
 
@@ -67,3 +67,6 @@ The [saved predictions](evaluation_results.csv) and [execution record](experimen
 Start with [1_Long_Memory.ipynb](1_Long_Memory.ipynb), using the local Ollama models and dependencies in [requirements.txt](requirements.txt). Its default evaluation selects **two Graph RAG examples**. This small execution demonstrates the complete pipeline; the 28-question comparison above is retained from the earlier experiments.
 
 See the [final comparison](experiments/graph_rag_audit_20261104/report/comparison.csv), [validation summary](experiments/graph_rag_audit_20261104/report/summary.json), and [failure diagnosis](experiments/graph_rag_audit_20261104/report/failure_diagnosis.json). The [reproduction guide](experiments/README.md) provides a fresh-kernel notebook runner and an optional 28-question runner, both using the current notebook's unchanged logic. Final reports are retained; exploratory variants, duplicate snapshots, and graph caches are excluded from the repository. Historical notebook hashes identify the evaluated implementation before documentation and cleanup.
+
+
+> Note) This `README.md` was written with the support of generative LLM.
