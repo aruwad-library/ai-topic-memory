@@ -7,7 +7,7 @@
 *.png
 *.json
 *.jsonl
-*.pdf
+*_ko.pdf
 
 # Custom
 tmp/
